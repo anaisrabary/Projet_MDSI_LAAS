@@ -35,6 +35,11 @@ bdd.xml : le document XML créé, équivalent de toute la base de données
 On peut tester chaque .xml de manière indépendante les uns des autres, au niveau de la syntaxe des documents par rapport aux.xsd, mais afin de tester la validité des références de clés, il faut tester la validité sur le document représentant la base de données entière bdd.xml
 
 ## Working
+### clonner le projet :
+```
+git clone https://github.com/anaisrabary/Projet_MDSI_LAAS.git
+```
+## travailler
 ```
 git pull
 git add "nom_fichier" || git add .
