@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<!-- élément racine -->
+	<xsd:element name="equipes_de_recherche">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="Equipe" minOccurs="1" maxOccurs="unbounded" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>	
+	
+	<xsd:element name="equipe_de_recherche">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="nom" type="xsd:string"/>
+				<xsd:element name="theme" type="xsd:token"/>
+				<xsd:element name="respondable_equipe" type="xsd:token"/>
+				<xsd:element name="membres">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="membre" type="xsd:token" minOccurs="1" maxOccurs="unbounded"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="productions_scientifiques" minOccurs="0" maxOccurs="unbounded">
+					<xsd:complexType>			
+						<xsd:sequence>
+							<xsd:element name="production_scientifique" type="xsd:token"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+			<xsd:attribute name="acronyme" type="xsd:string" use="required" />
+		</xsd:complexType>
+	</xsd:element>
+	
+
+</xsd:schema>
