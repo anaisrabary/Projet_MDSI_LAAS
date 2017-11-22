@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<equipes_de_recherche>
+
+  <equipe_de_recherche acronyme="BAC">
+    <nom>Brigade Apéro Cacahuète</nom>
+    <theme>IC</theme>
+    <responsable_equipe>M3</responsable_equipe>
+    
+    <membres>
+      <membre>M1</membre>
+      <membre>M2</membre>
+      <membre>M3</membre>
+    </membres>
+    
+    <productions_scientifique>
+      <production>PS1</production>
+      <production>PS2</production>
+    </productions_scientifique>
+
+  </equipe_de_recherche>
+
+  
+
+  <equipe_de_recherche acronyme="OVNI">
+    <nom>Objet Voulant Naviguer Incognito</nom>
+    <theme>TICS</theme>
+    <responsable_equipe>M6</responsable_equipe>
+    
+    <membres>
+      <membre>M4</membre>
+      <membre>M5</membre>
+      <membre>M6</membre>
+      <membre>M7</membre>
+    </membres>
+    
+    <productions_scientifique>
+      <production>PS3</production>
+    </productions_scientifique>
+
+  </equipe_de_recherche>
+
+
+  
+  <equipe_de_recherche acronyme="FNAC">
+    <nom>Faut Nous Acheter Ca</nom>
+    <theme>DO</theme>
+    <responsable_equipe>M8</responsable_equipe>
+    
+    <membres>
+      <membre>M8</membre>
+      <membre>M9</membre>
+    </membres>
+    
+    <productions_scientifique>
+    </productions_scientifique>
+
+  </equipe_de_recherche>
+
+
+  
+  <equipe_de_recherche acronyme="FORD">
+    <nom>Fabrication Ordinaire Réparation Difficile</nom>
+    <theme>ROB</theme>
+    <responsable_equipe>M10</responsable_equipe>
+    
+    <membres>
+      <membre>M10</membre>
+    </membres>
+    
+    <productions_scientifique>
+    </productions_scientifique>
+
+  </equipe_de_recherche>
+
+
+  
+  <equipe_de_recherche acronyme="GDF">
+    <nom>Gros Déprimé Fumeur</nom>
+    <theme>RC</theme>
+    <responsable_equipe>M12</responsable_equipe>
+    
+    <membres>
+      <membre>M12</membre>
+    </membres>
+    
+    <productions_scientifique>
+      <production>PS4</production>
+    </productions_scientifique>
+  </equipe_de_recherche>
+
+
+
+  
+  <equipe_de_recherche acronyme="FBI">
+    <nom>Fausses Blondes Infiltrées</nom>
+    <theme>HOPES</theme>
+    <responsable_equipe>M13</responsable_equipe>
+    
+    <membres>
+      <membre>M13</membre>
+      <membre>M11</membre>
+      <membre>M14</membre>
+    </membres>
+    
+    <productions_scientifique></productions_scientifique>
+  </equipe_de_recherche>
+
+
+  
+  <equipe_de_recherche acronyme="CRS">
+    <nom>Couillons en Rangs Serrés</nom>
+    <theme>HOPES</theme>
+    <responsable_equipe>M14</responsable_equipe>
+    
+    <membres>
+      <membre>M14</membre>
+      <membre>M15</membre>
+    </membres>
+    
+    <productions_scientifique></productions_scientifique>
+  </equipe_de_recherche>
+
+
+  
+  <equipe_de_recherche acronyme="DDE">
+    <nom>Direction départementale des embouteillages</nom>
+    <theme>GE</theme>
+    <responsable_equipe>M15</responsable_equipe>
+    
+    <membres>
+      <membre>M14</membre>
+      <membre>M15</membre>
+    </membres>
+    
+    <productions_scientifique>
+      <production>PS5</production>
+      <production>PS6</production>
+    </productions_scientifique>
+  </equipe_de_recherche>
+
+
+  
+  <equipe_de_recherche acronyme="RPR">
+    <nom>Rassemblement des Petits Retraités</nom>
+    <theme>MNBT</theme>
+    <responsable_equipe>M16</responsable_equipe>
+    
+    <membres>
+      <membre>M16</membre>
+      <membre>M17</membre>
+      <membre>M18</membre>
+    </membres>
+    
+    <productions_scientifique>
+      <production>PS5</production>
+      <production>PS6</production>
+    </productions_scientifique>
+  </equipe_de_recherche>
+
+  
+  <equipe_de_recherche acronyme="CIL">
+    <nom>Creation d'un Immense Logiciel</nom>
+    <theme>IC</theme>
+    <responsable_equipe>M18</responsable_equipe>
+    
+    <membres>
+      <membre>M17</membre>
+      <membre>M18</membre>
+      <membre>M19</membre>
+    </membres>
+    
+    <productions_scientifique>
+      <production>PS7</production>
+    </productions_scientifique>
+  </equipe_de_recherche>
+
+  
+  <equipe_de_recherche acronyme="OSE">
+    <nom>Ordinateur Sans Electricité</nom>
+    <theme>HOPES</theme>
+    <responsable_equipe>M18</responsable_equipe>
+    
+    <membres>
+      <membre>M20</membre>
+      <membre>M21</membre>
+      <membre>M22</membre>
+      <membre>M23</membre>
+      <membre>M24</membre>
+      <membre>M25</membre>
+    </membres>
+    
+    <productions_scientifique>
+      <production>PS8</production>
+    </productions_scientifique>
+  </equipe_de_recherche>
+
+
+  
+  <equipe_de_recherche acronyme="OUIA">
+    <nom>Ordinateur Utilisant Intelligence Artificielle </nom>
+    <theme>IC</theme>
+    <responsable_equipe>M30</responsable_equipe>
+    
+    <membres>
+      <membre>M26</membre>
+      <membre>M27</membre>
+      <membre>M28</membre>
+      <membre>M29</membre>
+      <membre>M30</membre>
+    </membres>
+    
+    <productions_scientifique>
+      <production>PS9</production>
+      <production>PS10</production>
+    </productions_scientifique>
+  </equipe_de_recherche>
+
+  
+
+
+
+  
+</equipes_de_recherche>
