@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+	<!-- element racine -->
+	<xsd:element name="membres">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="membre" minOccurs="1" maxOccurs="unbounded" />
+			</xsd:sequence>
+		</xsd:complexType>
+		
+		<!-- identifiant d'un membre -->
+		<xsd:key name="ID_Membre">
+			<xsd:selector xpath=".//membre"/>
+			<xsd:field xpath="@id" />
+		</xsd:key>
+		
+	</xsd:element>	
+
+	<xsd:element name="membre">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="nom" type="xsd:string" />
+				<xsd:element name="prenom" type="xsd:string" />
+				<xsd:element name="grade" type="xsd:token" />
+				<xsd:element name="email" type="type_email" />
+			</xsd:sequence>
+			<xsd:attribute name="id" type="xsd:token" use="required" />
+		</xsd:complexType>
+	</xsd:element>
+	
+	<!-- type de l'élément email : expresion régulière valide pour une adresse mail -->
+	<xsd:simpleType name="type_email">
+		<xsd:restriction base="xsd:string">
+            <xsd:pattern value="[a-zA-Z0-9._-]+@[a-z]{2,}.[a-z]{2,4}" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+
+</xsd:schema>

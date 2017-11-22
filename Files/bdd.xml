@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<laas>
+  <themes>
+		
+	<theme acronyme="IC">
+		<description>Informatique critique</description>
+		<responsable>M2</responsable>
+	</theme>
+	
+	<theme acronyme="RC">
+		<description>Réseaux et communication</description>
+		<responsable>M1</responsable>
+	</theme>
+	
+	<theme acronyme="ROB">
+		<description>Robotique</description>
+		<responsable>M3</responsable>
+	</theme>
+	
+	<theme acronyme="DO">
+		<description>Décision et optimisation</description>
+		<responsable>M7</responsable>
+	</theme>
+	
+	<theme acronyme="HOPES">
+		<description>Hyperfréquence et optique</description>
+		<responsable>M6</responsable>
+	</theme>
+	
+	<theme acronyme="TICS">
+		<description>Technologie et instrumentation pour le monitoring de systèmes complexes</description>
+		<responsable>M4</responsable>
+	</theme>
+	
+	<theme acronyme="MNBT">
+		<description>Micro nano bio technologies</description>
+		<responsable>M1</responsable>
+	</theme>
+	
+	<theme acronyme="GE">
+		<description>Gestion de l'énergie</description>
+		<responsable>M5</responsable>
+	</theme>
+
+</themes>
+  <membres>
+		
+	<membre id="M1">
+		<nom>toto</nom>
+		<prenom>titi</prenom>
+		<grade>tata</grade>
+		<email>toto@titi.com</email>
+	</membre>
+
+</membres>
+</laas>

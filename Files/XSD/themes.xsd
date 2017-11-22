@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<!-- élément racine -->
+	<xsd:element name="themes">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="theme" minOccurs="1" maxOccurs="unbounded" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>	
+	
+	<xsd:element name="theme">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="description" type="xsd:string" />
+				<xsd:element name="responsable" type="xsd:token" />
+			</xsd:sequence>
+			<xsd:attribute name="acronyme" type="enum_theme" use="required" />
+		</xsd:complexType>
+	</xsd:element>
+	
+	<!-- valeur de l'attribut acronyme de l'élément theme -->
+	<xsd:simpleType name="enum_theme">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="IC" />
+			<xsd:enumeration value="RC" />
+			<xsd:enumeration value="ROB" />
+			<xsd:enumeration value="DO" />
+			<xsd:enumeration value="HOPES" />
+			<xsd:enumeration value="TICS" />
+			<xsd:enumeration value="MNBT" />
+			<xsd:enumeration value="GE" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+</xsd:schema>

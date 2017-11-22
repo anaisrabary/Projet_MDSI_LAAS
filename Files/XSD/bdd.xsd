@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+	<!-- inclusion des différents XML schémas -->
+	<xsd:include schemaLocation="themes.xsd" />
+	<xsd:include schemaLocation="membres.xsd" />
+		
+	<!-- élément racine -->
+	<xsd:element name="laas">
+		<xsd:complexType>
+			<xsd:all>
+				<xsd:element ref="themes" />
+				<xsd:element ref="membres" />
+			</xsd:all>
+		</xsd:complexType>
+		
+		<!--
+			Références des clés étrangères entres les différents éléments
+		-->
+		
+		<!-- référence à l'identifiant du responsable d'un thème dans l'ensemble des membres -->
+		<xsd:keyref name="ref_ID_Responsable_Theme" refer="ID_Membre">
+			<xsd:selector xpath="./themes/theme" />
+			<xsd:field xpath="responsable" />
+		</xsd:keyref>
+		
+	</xsd:element>	
+	
+</xsd:schema>
