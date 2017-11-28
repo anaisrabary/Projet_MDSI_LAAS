@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+	<!-- element racine -->
+	<xsd:element name="partenaires_participants">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="partenaire_participant" minOccurs="1" maxOccurs="unbounded" />
+			</xsd:sequence>
+		</xsd:complexType>
+		
+		<!-- identifiant d'un partenaire -->
+		<xsd:key name="ID_Partenaire_Participant">
+			<xsd:selector xpath=".//partenaire_participant"/>
+			<xsd:field xpath="@id" />
+		</xsd:key>
+		
+	</xsd:element>	
+
+	<xsd:element name="partenaire_participant">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="nom" type="xsd:string" />
+				<xsd:element name="pays" type="xsd:string" />
+			</xsd:sequence>
+			<xsd:attribute name="id" type="xsd:token" use="required" />
+		</xsd:complexType>
+	</xsd:element>
+	
+</xsd:schema>
+
+
+
+
