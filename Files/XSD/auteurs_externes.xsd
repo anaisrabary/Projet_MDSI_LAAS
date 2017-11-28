@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<!-- élément racine -->
+	<xsd:element name="auteurs_externes">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="auteur_externe" maxOccurs="unbounded" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>	
+
+	<xsd:element name="auteur_externe">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="nom" type="xsd:string"/>
+				<xsd:element name="affiliation" type="xsd:string"/>
+			</xsd:sequence>
+		<xsd:attribute name="ID" type="xsd:token" use="required" />
+		</xsd:complexType>
+	</xsd:element>
+
+</xsd:schema>

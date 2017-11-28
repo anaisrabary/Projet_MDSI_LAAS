@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<auteurs_externes>
+
+  <auteur_externe ID="A1">
+    <nom>Waldi Ratamère</nom>
+    <affiliation>INSA</affiliation> 
+  </auteur_externe>
+
+
+ <auteur_externe ID="A2">
+    <nom>Yves Hégé</nom>
+    <affiliation>TBS</affiliation> 
+  </auteur_externe>
+
+ <auteur_externe ID="A3">
+    <nom>Vic Tim</nom>
+    <affiliation>La Dépêche</affiliation> 
+  </auteur_externe>
+
+ <auteur_externe ID="A4">
+    <nom>Tom de Savoie</nom>
+    <affiliation>Airbus</affiliation> 
+  </auteur_externe>
+
+ <auteur_externe ID="A5">
+    <nom>Thor Tikoli</nom>
+    <affiliation>Le Monde</affiliation> 
+  </auteur_externe>
+
+ <auteur_externe ID="A6">
+    <nom>Thésée Vous</nom>
+    <affiliation>Thales</affiliation> 
+  </auteur_externe>
+
+ <auteur_externe ID="A7">
+    <nom>Tess Ticule</nom>
+    <affiliation>Actia</affiliation> 
+  </auteur_externe>
+
+ <auteur_externe ID="A8">
+    <nom>Sim Ilicuir</nom>
+    <affiliation>SII</affiliation> 
+  </auteur_externe>
+
+ <auteur_externe ID="A9">
+    <nom>Théo Courant</nom>
+    <affiliation>SII</affiliation> 
+  </auteur_externe>
+
+ <auteur_externe ID="A10">
+    <nom>Tad Bozieux</nom>
+    <affiliation>SII</affiliation> 
+  </auteur_externe>
+
+
+</auteurs_externes>
