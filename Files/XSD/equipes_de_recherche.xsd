@@ -6,7 +6,7 @@
 	<xsd:element name="equipes_de_recherche">
 		<xsd:complexType>
 			<xsd:sequence>
-				<xsd:element ref="Equipe" minOccurs="1" maxOccurs="unbounded" />
+				<xsd:element name="equipe_de_recherche" minOccurs="1" maxOccurs="unbounded" />
 			</xsd:sequence>
 		</xsd:complexType>
 	</xsd:element>	
