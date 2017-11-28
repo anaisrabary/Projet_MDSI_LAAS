@@ -53,5 +53,8 @@
     <affiliation>SII</affiliation> 
   </auteur_externe>
 
-
+<auteur_externe ID="A11">
+    <nom>Eddy Malou</nom>
+    <affiliation>La Republique Démocratique du Congo</affiliation> 
+  </auteur_externe>
 </auteurs_externes>

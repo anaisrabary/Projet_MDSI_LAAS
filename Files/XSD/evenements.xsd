@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<!-- élément racine -->
+	<xsd:element name="evenements">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="evenement" maxOccurs="unbounded" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>	
+
+	<xsd:element name="evenement">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="nom" type="xsd:string"/>
+				<xsd:element name="date_debut" type="type_date"/>
+				<xsd:element name="date_fin" type="type_date"/>
+				<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element ref="equipes_de_recherche" type="xsd:token" maxOccurs="1"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				
+			</xsd:sequence>
+		<xsd:attribute name="ID" type="xsd:token" use="required" />
+		</xsd:complexType>
+	</xsd:element>
+
+
+
+	<xsd:simpleType name="type_date">
+		<xsd:restriction base="xsd:string">
+            <xsd:pattern value="[0-9]{2}/[0-9]{2}/[0-9]{4}" />
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>
