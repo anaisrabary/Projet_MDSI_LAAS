@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theses_doctorats>
+		
+	<theses_soutenues>
+		<these_soutenue date_debut="15/09/2015" date_soutenance="07/11/2017">
+			<titre>Modélisation 3D d'écoulements de mucus autour d'une cellule épithéliale dans le poumon</titre>
+			<theme>TICS</theme>
+			<equipe>RPR</equipe>
+			<productions>
+				<production></production>
+			</productions> 
+	
+		</these_soutenue>	
+	</theses_soutenues>
+	
+	
+	<theses_en_cours>
+		<these_en_cours date_debut="08/08/2016">
+			<titre>Des « pots de miel » pour espionner les pirates informatiques</titre>
+			<theme>RC</theme>
+			<equipe>RPR</equipe>
+			<productions>
+				<production></production>
+			</productions> 
+		</these_en_cours>
+	
+		<these_en_cours date_debut="22/11/2017">
+			<titre>Optimisation du rendement de production de bioéthanol chez
+	Saccharomyces cerevisiae par minimisation de la synthèse du glycérol : Approche
+	intégrée de génie métabolique et microbiologique</titre>
+			<theme>MNBT</theme>
+			<equipe>RPR</equipe>
+			<productions>
+				<production></production>
+			</productions> 
+		</these_en_cours>
+	
+	</theses_en_cours>
+	
+
+</theses_doctorats>

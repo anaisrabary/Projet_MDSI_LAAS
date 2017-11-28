@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<partenaires_participants>
+		
+	<partenaire_participant id="PP1">
+		<nom>Engie</nom>
+		<pays>France</pays>
+	</partenaire_participant>
+	
+	<partenaire_participant id="PP2">
+		<nom>Total</nom>
+		<pays>France</pays>
+	</partenaire_participant>
+	
+	<partenaire_participant id="PP3">
+		<nom>Rolls Royce</nom>
+		<pays>Royaume-Uni</pays>
+	</partenaire_participant>
+
+</partenaires_participants>
