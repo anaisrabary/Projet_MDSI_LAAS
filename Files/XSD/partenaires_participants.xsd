@@ -6,7 +6,7 @@
 	<xsd:element name="partenaires_participants">
 		<xsd:complexType>
 			<xsd:sequence>
-				<xsd:element ref="partenaire_participant" minOccurs="1" maxOccurs="unbounded" />
+				<xsd:element ref="partenaire_participant" maxOccurs="unbounded" />
 			</xsd:sequence>
 		</xsd:complexType>
 		
