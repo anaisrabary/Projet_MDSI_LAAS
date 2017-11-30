@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<projets_de_recherche>
+		
+	<projet_de_recherche acronyme="CRISIS">
+		<titre>La crise en France</titre>
+		<date_debut>01/01/1990</date_debut>
+		<duree>1404</duree> <!-- 27 ans -->
+		<cout_global>3000000000</cout_global>
+		<budget_alloue>500000</budget_alloue>
+		<axes>
+			<axe ref="ROB"/>
+			<axe ref="IC"/>
+		</axes>
+		<equipes>
+			<equipe ref="DDE" />
+		</equipes>
+		<partenaires_participants>
+			<partenaire_participant ref="PP1" />
+		</partenaires_participants>
+		<porteur_du_projet ref="M14" />
+		<rapport_recherche ref="RAP1" />
+	</projet_de_recherche>
+	
+
+</projets_de_recherche>
