@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+	<!-- element racine -->
+	<xsd:element name="projets_de_recherche">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="projet_de_recherche" maxOccurs="unbounded" />
+			</xsd:sequence>
+		</xsd:complexType>		
+	</xsd:element>	
+
+	<xsd:element name="projet_de_recherche">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="titre" type="xsd:string" />
+				<xsd:element name="date_debut" type="type_date" />
+				<xsd:element name="duree" type="xsd:int" />
+				<xsd:element name="cout_global" type="xsd:float" />
+				<xsd:element name="budget_alloue" type="xsd:float" />
+				<xsd:element name="axes">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="axe" minOccurs="0" maxOccurs="unbounded">
+								<xsd:complexType>
+									<xsd:attribute name="ref" type="xsd:token" use="required" />
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="equipes">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="equipe" maxOccurs="unbounded">
+								<xsd:complexType>
+									<xsd:attribute name="ref" type="xsd:token" use="required" />
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="partenaires_participants">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="partenaire_participant" minOccurs="0" maxOccurs="unbounded">
+								<xsd:complexType>
+									<xsd:attribute name="ref" type="xsd:token" use="required" />
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="porteur_du_projet">
+					<xsd:complexType>
+						<xsd:attribute name="ref" type="xsd:token" use="required" />
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="rapport_recherche">
+					<xsd:complexType>
+						<xsd:attribute name="ref" type="xsd:token" use="required" />
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+			<xsd:attribute name="acronyme" type="xsd:token" use="required" />
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:simpleType name="type_date">
+		<xsd:restriction base="xsd:string">
+            <xsd:pattern value="[0-9]{2}/[0-9]{2}/[0-9]{4}" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	
+</xsd:schema>
+
+
+
+
