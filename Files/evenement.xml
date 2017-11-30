@@ -1,8 +1,29 @@
-<auteur_externe ID="E1V">
-    <nom>Raclete du LAAS</nom>
-    <date_debut>28/11/2017</date_debut> 
-		<date_fin>30/11/2017</date_fin>
-		<equipes_de_recherche>
-			<equipe_de_recherche></equipe_de_recherche>
-		</equipes_de_recherche>
-  </auteur_externe>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<evenements>
+
+  <reunions>
+    <reunion ID="R1">
+      <nom>Raclette du nouvel an du LAAS</nom>
+      <date_debut>28/12/2017-08:00</date_debut> 
+      <date_fin>31/12/2017-23:59</date_fin>
+    </reunion>
+  </reunions>
+
+  <conferences>
+    <conference ID="C1">
+      <nom>La raclette chez les chercheurs </nom>
+      <date_debut>10/01/2018-15:12</date_debut>
+      <date_fin>10/01/2018-15:13</date_fin>
+      <equipes>
+	<equipe_de_recherche>FBI</equipe_de_recherche>
+      </equipes>
+      <classe>B</classe>
+    </conference>
+  </conferences>
+
+
+  
+</evenements>
+
+
