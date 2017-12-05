@@ -25,7 +25,7 @@
 	</xsd:complexType>
       </xsd:element>
     </xsd:sequence>
-    <xsd:attribute name="ID" type="xsd:token" use="required" />
+    <xsd:attribute name="id" type="xsd:token" use="required" />
   </xsd:complexType>
 
   

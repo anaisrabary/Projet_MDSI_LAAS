@@ -2,58 +2,58 @@
 
 <auteurs_externes>
 
-  <auteur_externe ID="A1">
+  <auteur_externe id="A1">
     <nom>Waldi Ratamère</nom>
     <affiliation>INSA</affiliation> 
   </auteur_externe>
 
 
- <auteur_externe ID="A2">
+ <auteur_externe id="A2">
     <nom>Yves Hégé</nom>
     <affiliation>TBS</affiliation> 
   </auteur_externe>
 
- <auteur_externe ID="A3">
+ <auteur_externe id="A3">
     <nom>Vic Tim</nom>
     <affiliation>La Dépêche</affiliation> 
   </auteur_externe>
 
- <auteur_externe ID="A4">
+ <auteur_externe id="A4">
     <nom>Tom de Savoie</nom>
     <affiliation>Airbus</affiliation> 
   </auteur_externe>
 
- <auteur_externe ID="A5">
+ <auteur_externe id="A5">
     <nom>Thor Tikoli</nom>
     <affiliation>Le Monde</affiliation> 
   </auteur_externe>
 
- <auteur_externe ID="A6">
+ <auteur_externe id="A6">
     <nom>Thésée Vous</nom>
     <affiliation>Thales</affiliation> 
   </auteur_externe>
 
- <auteur_externe ID="A7">
+ <auteur_externe id="A7">
     <nom>Tess Ticule</nom>
     <affiliation>Actia</affiliation> 
   </auteur_externe>
 
- <auteur_externe ID="A8">
+ <auteur_externe id="A8">
     <nom>Sim Ilicuir</nom>
     <affiliation>SII</affiliation> 
   </auteur_externe>
 
- <auteur_externe ID="A9">
+ <auteur_externe id="A9">
     <nom>Théo Courant</nom>
     <affiliation>SII</affiliation> 
   </auteur_externe>
 
- <auteur_externe ID="A10">
+ <auteur_externe id="A10">
     <nom>Tad Bozieux</nom>
     <affiliation>SII</affiliation> 
   </auteur_externe>
 
-<auteur_externe ID="A11">
+<auteur_externe id="A11">
     <nom>Eddy Malou</nom>
     <affiliation>La Republique Démocratique du Congo</affiliation> 
   </auteur_externe>
