@@ -5,6 +5,13 @@
 	<!-- inclusion des différents XML schémas -->
 	<xsd:include schemaLocation="themes.xsd" />
 	<xsd:include schemaLocation="membres.xsd" />
+	<xsd:include schemaLocation="equipes_de_recherche.xsd" />
+	<xsd:include schemaLocation="auteurs_externes.xsd" />
+	<xsd:include schemaLocation="evenements.xsd" />
+	<xsd:include schemaLocation="partenaires_participants.xsd" />
+	<xsd:include schemaLocation="productions_scientifiques.xsd" />
+	<xsd:include schemaLocation="projets_de_recherche.xsd" />
+	<xsd:include schemaLocation="theses_doctorats.xsd" />
 		
 	<!-- élément racine -->
 	<xsd:element name="laas">
@@ -12,6 +19,13 @@
 			<xsd:all>
 				<xsd:element ref="themes" />
 				<xsd:element ref="membres" />
+				<xsd:element ref="equipes_de_recherche" />
+				<xsd:element ref="auteurs_externes" />
+				<xsd:element ref="evenements" />
+				<xsd:element ref="partenaires_participants" />
+				<xsd:element ref="productions_scientifiques" />
+				<xsd:element ref="projets_de_recherche" />
+				<xsd:element ref="theses_doctorats" />
 			</xsd:all>
 		</xsd:complexType>
 		
