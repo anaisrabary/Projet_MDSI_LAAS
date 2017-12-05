@@ -46,11 +46,675 @@
   <membres>
 		
 	<membre id="M1">
-		<nom>toto</nom>
-		<prenom>titi</prenom>
-		<grade>tata</grade>
-		<email>toto@titi.com</email>
+		<nom>Bill</nom>
+		<prenom>Tcherno</prenom>
+		<grade>PR</grade>
+		<email>tcherno.bill@laas.fr</email>
 	</membre>
 
+	
+	<membre id="M2">
+		<nom>Balmaské</nom>
+		<prenom>Alonzo</prenom>
+		<grade>Doctorant</grade>
+		<email>alonzo.balmaske@laas.fr</email>
+	</membre>
+
+	
+	<membre id="M3">
+	  <nom>Bistrot</nom>
+	  <prenom>Alonzo</prenom>
+	  <grade>MCF</grade>
+	  <email>alonzo.bistrot@laas.fr</email>
+	</membre>
+
+
+	
+	<membre id="M4">
+	  <nom>Crush</nom>
+	  <prenom>Candy</prenom>
+	  <grade>Doctorant</grade>
+	  <email>candy.crush@laas.fr</email>
+	</membre>
+
+	
+	<membre id="M5">
+	  <nom>Minie</nom>
+	  <prenom>Cathy</prenom>
+	  <grade>PR</grade>
+	  <email>cathy.minie@laas.fr</email>
+	</membre>
+
+	<membre id="M6">
+	  <nom>Pran</nom>
+	  <prenom>Dolly</prenom>
+	  <grade>MCF</grade>
+	  <email>pran@laas.fr</email>
+	</membre>
+
+	<membre id="M7">
+	  <nom>Ileosud</nom>
+	  <prenom>Eleonore</prenom>
+	  <grade>Doctorant</grade>
+	  <email>nordsud@laas.fr</email>
+	</membre>
+
+	<membre id="M8">
+	  <nom>Lapeche</nom>
+	  <prenom>Ella</prenom>
+	  <grade>PR</grade>
+	  <email>lapeche@laas.fr</email>
+	</membre>
+
+	<membre id="M9">
+	  <nom>Dorsa</nom>
+	  <prenom>Elsa</prenom>
+	  <grade>MCF</grade>
+	  <email>elsa.dorsa@laas.fr</email>
+	</membre>
+
+
+	<membre id="M10">
+	  <nom>Deplaisant</nom>
+	  <prenom>Fort</prenom>
+	  <grade>PR</grade>
+	  <email>fort.deplaisant@laas.fr</email>
+	</membre>
+
+	<membre id="M11">
+	  <nom>Opost</nom>
+	  <prenom>Fidel</prenom>
+	  <grade>Doctorant</grade>
+	  <email>fidelopost@laas.fr</email>
+	</membre>
+
+	
+	<membre id="M12">
+	  <nom>Mendufric</nom>
+	  <prenom>Gerard</prenom>
+	  <grade>PR</grade>
+	  <email>gerarmendufric@laas.fr</email>
+	</membre>
+
+	<membre id="M13">
+	  <nom>Evenu</nom>
+	  <prenom>Hilaire</prenom>
+	  <grade>MCF</grade>
+	  <email>hilairevenu@laas.fr</email>
+	</membre>
+	
+	<membre id="M14">
+	  <nom>Péré</nom>
+	  <prenom>Ines</prenom>
+	  <grade>MCF</grade>
+	  <email>ines.pere@laas.fr</email>
+	</membre>
+
+	<membre id="M15">
+	  <nom>Nieur</nom>
+	  <prenom>Inge</prenom>
+	  <grade>MCF</grade>
+	  <email>ingenieur@laas.fr</email>
+	</membre>
+
+	<membre id="M16">
+	  <nom>Le Paquet</nom>
+	  <prenom>Jamie</prenom>
+	  <grade>PR</grade>
+	  <email>jamielepaquet@laas.fr</email>
+	</membre>
+
+	
+	<membre id="M17">
+	  <nom>Couzy</nom>
+	  <prenom>Jacques</prenom>
+	  <grade>Doctorant</grade>
+	  <email>jacques.couzy@laas.fr</email>
+	</membre>
+
+	
+
+	<membre id="M18">
+	  <nom>Orlapizza</nom>
+	  <prenom>Jade</prenom>
+	  <grade>MCF</grade>
+	  <email>jade.orlapizza@laas.fr</email>
+	</membre>
+	
+	<membre id="M19">
+	  <nom>Dmépassa</nom>
+	  <prenom>Jeanne</prenom>
+	  <grade>MCF</grade>
+	  <email>jeanne.dmepassa@laas.fr</email>
+	</membre>
+
+	
+	
+	
+	<membre id="M20">
+	  <nom>Keunitet</nom>
+	  <prenom>Jenny</prenom>
+	  <grade>MCF</grade>
+	  <email>jenny.keunitet@laas.fr</email>
+	</membre>
+
+
+	
+	
+	<membre id="M21">
+	  <nom>Deuf</nom>
+	  <prenom>John</prenom>
+	  <grade>Doctorant</grade>
+	  <email>john.deuf@laas.fr</email>
+	</membre>
+
+	
+	
+	<membre id="M22">
+	  <nom>Cieux</nom>
+	  <prenom>Judie</prenom>
+	  <grade>Doctorant</grade>
+	  <email>judie.cieux@laas.fr</email>
+	</membre>
+
+	<membre id="M23">
+	  <nom>Uncou</nom>
+	  <prenom>Juste</prenom>
+	  <grade>MCF</grade>
+	  <email>juste.uncou@laas.fr</email>
+	</membre>
+
+
+	
+	<membre id="M24">
+	  <nom>Goldage</nom>
+	  <prenom>Larry</prenom>
+	  <grade>PR</grade>
+	  <email>larry.golade@laas.fr</email>
+	</membre>
+
+	
+	<membre id="M25">
+	  <nom>Zona</nom>
+	  <prenom>Larry</prenom>
+	  <grade>Doctorant</grade>
+	  <email>larry.zona@laas.fr</email>
+	</membre>
+
+	<membre id="M26">
+	  <nom>Chocolat</nom>
+	  <prenom>Léo</prenom>
+	  <grade>Doctorant</grade>
+	  <email>lait.au.chocolat@laas.fr</email>
+	</membre>
+
+	
+	<membre id="M27">
+	  <nom>Ange</nom>
+	  <prenom>Lou</prenom>
+	  <grade>MCF</grade>
+	  <email>lou.ange@laas.fr</email>
+	</membre>
+
+	<membre id="M28">
+	  <nom>Ratif</nom>
+	  <prenom>Luc</prenom>
+	  <grade>Doctorant</grade>
+	  <email>luc.ratif@laas.fr</email>
+	</membre>
+
+	<membre id="M29">
+	  <nom>Hole</nom>
+	  <prenom>Lucie</prenom>
+	  <grade>MCF</grade>
+	  <email>lucie.hole@laas.fr</email>
+	</membre>
+
+	<membre id="M30">
+	  <nom>Commandement</nom>
+	  <prenom>Lydie</prenom>
+	  <grade>PR</grade>
+	  <email>les10commandements@laas.fr</email>
+	</membre>
+	
+	
 </membres>
+  <equipes_de_recherche>
+
+  <equipe_de_recherche acronyme="BAC">
+    <nom>Brigade Apéro Cacahuète</nom>
+    <ref_theme>IC</ref_theme>
+    <responsable_equipe>M3</responsable_equipe>
+    
+    <ref_membres>
+      <ref_membre>M1</ref_membre>
+      <ref_membre>M2</ref_membre>
+      <ref_membre>M3</ref_membre>
+    </ref_membres>
+    
+    <productions_scientifique>
+      <production>PS1</production>
+      <production>PS2</production>
+    </productions_scientifique>
+
+  </equipe_de_recherche>
+
+  
+
+  <equipe_de_recherche acronyme="OVNI">
+    <nom>Objet Voulant Naviguer Incognito</nom>
+    <ref_theme>TICS</ref_theme>
+    <responsable_equipe>M6</responsable_equipe>
+    
+    <ref_membres>
+      <ref_membre>M4</ref_membre>
+      <ref_membre>M5</ref_membre>
+      <ref_membre>M6</ref_membre>
+      <ref_membre>M7</ref_membre>
+    </ref_membres>
+    
+    <productions_scientifique>
+      <production>PS3</production>
+    </productions_scientifique>
+
+  </equipe_de_recherche>
+
+
+  
+  <equipe_de_recherche acronyme="FNAC">
+    <nom>Faut Nous Acheter Ca</nom>
+    <ref_theme>DO</ref_theme>
+    <responsable_equipe>M8</responsable_equipe>
+    
+    <ref_membres>
+      <ref_membre>M8</ref_membre>
+      <ref_membre>M9</ref_membre>
+    </ref_membres>
+    
+    <productions_scientifique>
+    </productions_scientifique>
+
+  </equipe_de_recherche>
+
+
+  
+  <equipe_de_recherche acronyme="FORD">
+    <nom>Fabrication Ordinaire Réparation Difficile</nom>
+    <ref_theme>ROB</ref_theme>
+    <responsable_equipe>M10</responsable_equipe>
+    
+    <ref_membres>
+      <ref_membre>M10</ref_membre>
+    </ref_membres>
+    
+    <productions_scientifique>
+    </productions_scientifique>
+
+  </equipe_de_recherche>
+
+
+  
+  <equipe_de_recherche acronyme="GDF">
+    <nom>Gros Déprimé Fumeur</nom>
+    <ref_theme>RC</ref_theme>
+    <responsable_equipe>M12</responsable_equipe>
+    
+    <ref_membres>
+      <ref_membre>M12</ref_membre>
+    </ref_membres>
+    
+    <productions_scientifique>
+      <production>PS4</production>
+    </productions_scientifique>
+  </equipe_de_recherche>
+
+
+
+  
+  <equipe_de_recherche acronyme="FBI">
+    <nom>Fausses Blondes Infiltrées</nom>
+    <ref_theme>HOPES</ref_theme>
+    <responsable_equipe>M13</responsable_equipe>
+    
+    <ref_membres>
+      <ref_membre>M13</ref_membre>
+      <ref_membre>M11</ref_membre>
+      <ref_membre>M14</ref_membre>
+    </ref_membres>
+    
+    <productions_scientifique/>
+  </equipe_de_recherche>
+
+
+  
+  <equipe_de_recherche acronyme="CRS">
+    <nom>Couillons en Rangs Serrés</nom>
+    <ref_theme>HOPES</ref_theme>
+    <responsable_equipe>M14</responsable_equipe>
+    
+    <ref_membres>
+      <ref_membre>M14</ref_membre>
+      <ref_membre>M15</ref_membre>
+    </ref_membres>
+    
+    <productions_scientifique/>
+  </equipe_de_recherche>
+
+
+  
+  <equipe_de_recherche acronyme="DDE">
+    <nom>Direction départementale des embouteillages</nom>
+    <ref_theme>GE</ref_theme>
+    <responsable_equipe>M15</responsable_equipe>
+    
+    <ref_membres>
+      <ref_membre>M14</ref_membre>
+      <ref_membre>M15</ref_membre>
+    </ref_membres>
+    
+    <productions_scientifique>
+      <production>PS5</production>
+      <production>PS6</production>
+    </productions_scientifique>
+  </equipe_de_recherche>
+
+
+  
+  <equipe_de_recherche acronyme="RPR">
+    <nom>Rassemblement des Petits Retraités</nom>
+    <ref_theme>MNBT</ref_theme>
+    <responsable_equipe>M16</responsable_equipe>
+    
+    <ref_membres>
+      <ref_membre>M16</ref_membre>
+      <ref_membre>M17</ref_membre>
+      <ref_membre>M18</ref_membre>
+    </ref_membres>
+    
+    <productions_scientifique>
+      <production>PS5</production>
+      <production>PS6</production>
+    </productions_scientifique>
+  </equipe_de_recherche>
+
+  
+  <equipe_de_recherche acronyme="CIL">
+    <nom>Creation d'un Immense Logiciel</nom>
+    <ref_theme>IC</ref_theme>
+    <responsable_equipe>M18</responsable_equipe>
+    
+    <ref_membres>
+      <ref_membre>M17</ref_membre>
+      <ref_membre>M18</ref_membre>
+      <ref_membre>M19</ref_membre>
+    </ref_membres>
+    
+    <productions_scientifique>
+      <production>PS7</production>
+    </productions_scientifique>
+  </equipe_de_recherche>
+
+  
+  <equipe_de_recherche acronyme="OSE">
+    <nom>Ordinateur Sans Electricité</nom>
+    <ref_theme>HOPES</ref_theme>
+    <responsable_equipe>M18</responsable_equipe>
+    
+    <ref_membres>
+      <ref_membre>M20</ref_membre>
+      <ref_membre>M21</ref_membre>
+      <ref_membre>M22</ref_membre>
+      <ref_membre>M23</ref_membre>
+      <ref_membre>M24</ref_membre>
+      <ref_membre>M25</ref_membre>
+    </ref_membres>
+    
+    <productions_scientifique>
+      <production>PS8</production>
+    </productions_scientifique>
+  </equipe_de_recherche>
+
+
+  
+  <equipe_de_recherche acronyme="OUIA">
+    <nom>Ordinateur Utilisant Intelligence Artificielle </nom>
+    <ref_theme>IC</ref_theme>
+    <responsable_equipe>M30</responsable_equipe>
+    
+    <ref_membres>
+      <ref_membre>M26</ref_membre>
+      <ref_membre>M27</ref_membre>
+      <ref_membre>M28</ref_membre>
+      <ref_membre>M29</ref_membre>
+      <ref_membre>M30</ref_membre>
+    </ref_membres>
+    
+    <productions_scientifique>
+      <production>PS9</production>
+      <production>PS10</production>
+    </productions_scientifique>
+  </equipe_de_recherche>
+
+  
+
+
+
+  
+</equipes_de_recherche>
+  <auteurs_externes>
+
+  <auteur_externe id="A1">
+    <nom>Waldi Ratamère</nom>
+    <affiliation>INSA</affiliation> 
+  </auteur_externe>
+
+
+ <auteur_externe id="A2">
+    <nom>Yves Hégé</nom>
+    <affiliation>TBS</affiliation> 
+  </auteur_externe>
+
+ <auteur_externe id="A3">
+    <nom>Vic Tim</nom>
+    <affiliation>La Dépêche</affiliation> 
+  </auteur_externe>
+
+ <auteur_externe id="A4">
+    <nom>Tom de Savoie</nom>
+    <affiliation>Airbus</affiliation> 
+  </auteur_externe>
+
+ <auteur_externe id="A5">
+    <nom>Thor Tikoli</nom>
+    <affiliation>Le Monde</affiliation> 
+  </auteur_externe>
+
+ <auteur_externe id="A6">
+    <nom>Thésée Vous</nom>
+    <affiliation>Thales</affiliation> 
+  </auteur_externe>
+
+ <auteur_externe id="A7">
+    <nom>Tess Ticule</nom>
+    <affiliation>Actia</affiliation> 
+  </auteur_externe>
+
+ <auteur_externe id="A8">
+    <nom>Sim Ilicuir</nom>
+    <affiliation>SII</affiliation> 
+  </auteur_externe>
+
+ <auteur_externe id="A9">
+    <nom>Théo Courant</nom>
+    <affiliation>SII</affiliation> 
+  </auteur_externe>
+
+ <auteur_externe id="A10">
+    <nom>Tad Bozieux</nom>
+    <affiliation>SII</affiliation> 
+  </auteur_externe>
+
+<auteur_externe id="A11">
+    <nom>Eddy Malou</nom>
+    <affiliation>La Republique Démocratique du Congo</affiliation> 
+  </auteur_externe>
+</auteurs_externes>
+  <evenements>
+
+  <reunions>
+    <reunion id="R1">
+      <nom>Raclette du nouvel an du LAAS</nom>
+      <date_debut>28/12/2017-08:00</date_debut> 
+      <date_fin>31/12/2017-23:59</date_fin>
+    </reunion>
+  </reunions>
+
+  <conferences>
+    <conference id="C1">
+      <nom>La raclette chez les chercheurs </nom>
+      <date_debut>10/01/2018-15:12</date_debut>
+      <date_fin>10/01/2018-15:13</date_fin>
+      <equipes>
+	<equipe_de_recherche>FBI</equipe_de_recherche>
+      </equipes>
+      <classe>B</classe>
+    </conference>
+  </conferences>
+
+
+  
+</evenements>
+  <partenaires_participants>
+		
+	<partenaire_participant id="PP1">
+		<nom>Engie</nom>
+		<pays>France</pays>
+	</partenaire_participant>
+	
+	<partenaire_participant id="PP2">
+		<nom>Total</nom>
+		<pays>France</pays>
+	</partenaire_participant>
+	
+	<partenaire_participant id="PP3">
+		<nom>Rolls Royce</nom>
+		<pays>Royaume-Uni</pays>
+	</partenaire_participant>
+
+</partenaires_participants>
+  <productions_scientifiques>
+
+	<rapports>
+	
+		<rapport id="RAP1">
+			<titre>Rapport de stage de 3ème</titre>
+			<contenu>bla bla bla</contenu>
+			<annee>2015</annee>
+			<nb_pages>42</nb_pages>
+			<auteurs>
+				<auteur ref="A3"/>
+				<auteur ref="A1"/>
+			</auteurs>
+		</rapport>
+		
+	</rapports>
+	
+	
+	<articles>
+	
+		<article id="ART3">
+			<titre>Mon super article sur Toulouse</titre>
+			<contenu>bla bla bla</contenu>
+			<annee>2013</annee>
+			<nb_pages>107</nb_pages>
+			<auteurs>
+				<auteur ref="A8"/>
+				<auteur ref="A4"/>
+			</auteurs>
+			<conference nom="La ville rose" classe="A"/>
+		</article>
+	
+	</articles>
+	
+	
+	<revues>
+	
+		<revue id="REV6">
+			<titre>Finance d'entreprise</titre>
+			<contenu>bla bla bla</contenu>
+			<annee>2017</annee>
+			<nb_pages>9</nb_pages>
+			<auteurs>
+				<auteur ref="A11"/>
+			</auteurs>
+			<journal nom="La congolexicomatisation des lois du marché" classe="C"/>
+		</revue>
+		
+	</revues>
+
+</productions_scientifiques>
+  <projets_de_recherche>
+		
+	<projet_de_recherche acronyme="CRISIS">
+		<titre>La crise en France</titre>
+		<date_debut>01/01/1990</date_debut>
+		<duree>1404</duree> <!-- 27 ans -->
+		<cout_global>3000000000</cout_global>
+		<budget_alloue>500000</budget_alloue>
+		<axes>
+			<axe ref="ROB"/>
+			<axe ref="IC"/>
+		</axes>
+		<equipes>
+			<equipe ref="DDE"/>
+		</equipes>
+		<partenaires_participants>
+			<partenaire_participant ref="PP1"/>
+		</partenaires_participants>
+		<porteur_du_projet ref="M14"/>
+		<rapport_recherche ref="RAP1"/>
+	</projet_de_recherche>
+	
+
+</projets_de_recherche>
+  <theses_doctorats>
+		
+	<theses_soutenues>
+		<these_soutenue date_debut="15/09/2015" date_soutenance="07/11/2017">
+			<titre>Modélisation 3D d'écoulements de mucus autour d'une cellule épithéliale dans le poumon</titre>
+			<theme>TICS</theme>
+			<equipe>RPR</equipe>
+			<productions>
+				<production/>
+			</productions> 
+	
+		</these_soutenue>	
+	</theses_soutenues>
+	
+	
+	<theses_en_cours>
+		<these_en_cours date_debut="08/08/2016">
+			<titre>Des « pots de miel » pour espionner les pirates informatiques</titre>
+			<theme>RC</theme>
+			<equipe>RPR</equipe>
+			<productions>
+				<production/>
+			</productions> 
+		</these_en_cours>
+	
+		<these_en_cours date_debut="22/11/2017">
+			<titre>Optimisation du rendement de production de bioéthanol chez
+	Saccharomyces cerevisiae par minimisation de la synthèse du glycérol : Approche
+	intégrée de génie métabolique et microbiologique</titre>
+			<theme>MNBT</theme>
+			<equipe>RPR</equipe>
+			<productions>
+				<production/>
+			</productions> 
+		</these_en_cours>
+	
+	</theses_en_cours>
+	
+
+</theses_doctorats>
 </laas>

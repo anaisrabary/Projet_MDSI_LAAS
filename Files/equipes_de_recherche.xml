@@ -4,14 +4,14 @@
 
   <equipe_de_recherche acronyme="BAC">
     <nom>Brigade Apéro Cacahuète</nom>
-    <theme>IC</theme>
+    <ref_theme>IC</ref_theme>
     <responsable_equipe>M3</responsable_equipe>
     
-    <membres>
-      <membre>M1</membre>
-      <membre>M2</membre>
-      <membre>M3</membre>
-    </membres>
+    <ref_membres>
+      <ref_membre>M1</ref_membre>
+      <ref_membre>M2</ref_membre>
+      <ref_membre>M3</ref_membre>
+    </ref_membres>
     
     <productions_scientifique>
       <production>PS1</production>
@@ -24,15 +24,15 @@
 
   <equipe_de_recherche acronyme="OVNI">
     <nom>Objet Voulant Naviguer Incognito</nom>
-    <theme>TICS</theme>
+    <ref_theme>TICS</ref_theme>
     <responsable_equipe>M6</responsable_equipe>
     
-    <membres>
-      <membre>M4</membre>
-      <membre>M5</membre>
-      <membre>M6</membre>
-      <membre>M7</membre>
-    </membres>
+    <ref_membres>
+      <ref_membre>M4</ref_membre>
+      <ref_membre>M5</ref_membre>
+      <ref_membre>M6</ref_membre>
+      <ref_membre>M7</ref_membre>
+    </ref_membres>
     
     <productions_scientifique>
       <production>PS3</production>
@@ -44,13 +44,13 @@
   
   <equipe_de_recherche acronyme="FNAC">
     <nom>Faut Nous Acheter Ca</nom>
-    <theme>DO</theme>
+    <ref_theme>DO</ref_theme>
     <responsable_equipe>M8</responsable_equipe>
     
-    <membres>
-      <membre>M8</membre>
-      <membre>M9</membre>
-    </membres>
+    <ref_membres>
+      <ref_membre>M8</ref_membre>
+      <ref_membre>M9</ref_membre>
+    </ref_membres>
     
     <productions_scientifique>
     </productions_scientifique>
@@ -61,12 +61,12 @@
   
   <equipe_de_recherche acronyme="FORD">
     <nom>Fabrication Ordinaire Réparation Difficile</nom>
-    <theme>ROB</theme>
+    <ref_theme>ROB</ref_theme>
     <responsable_equipe>M10</responsable_equipe>
     
-    <membres>
-      <membre>M10</membre>
-    </membres>
+    <ref_membres>
+      <ref_membre>M10</ref_membre>
+    </ref_membres>
     
     <productions_scientifique>
     </productions_scientifique>
@@ -77,12 +77,12 @@
   
   <equipe_de_recherche acronyme="GDF">
     <nom>Gros Déprimé Fumeur</nom>
-    <theme>RC</theme>
+    <ref_theme>RC</ref_theme>
     <responsable_equipe>M12</responsable_equipe>
     
-    <membres>
-      <membre>M12</membre>
-    </membres>
+    <ref_membres>
+      <ref_membre>M12</ref_membre>
+    </ref_membres>
     
     <productions_scientifique>
       <production>PS4</production>
@@ -94,14 +94,14 @@
   
   <equipe_de_recherche acronyme="FBI">
     <nom>Fausses Blondes Infiltrées</nom>
-    <theme>HOPES</theme>
+    <ref_theme>HOPES</ref_theme>
     <responsable_equipe>M13</responsable_equipe>
     
-    <membres>
-      <membre>M13</membre>
-      <membre>M11</membre>
-      <membre>M14</membre>
-    </membres>
+    <ref_membres>
+      <ref_membre>M13</ref_membre>
+      <ref_membre>M11</ref_membre>
+      <ref_membre>M14</ref_membre>
+    </ref_membres>
     
     <productions_scientifique></productions_scientifique>
   </equipe_de_recherche>
@@ -110,13 +110,13 @@
   
   <equipe_de_recherche acronyme="CRS">
     <nom>Couillons en Rangs Serrés</nom>
-    <theme>HOPES</theme>
+    <ref_theme>HOPES</ref_theme>
     <responsable_equipe>M14</responsable_equipe>
     
-    <membres>
-      <membre>M14</membre>
-      <membre>M15</membre>
-    </membres>
+    <ref_membres>
+      <ref_membre>M14</ref_membre>
+      <ref_membre>M15</ref_membre>
+    </ref_membres>
     
     <productions_scientifique></productions_scientifique>
   </equipe_de_recherche>
@@ -125,13 +125,13 @@
   
   <equipe_de_recherche acronyme="DDE">
     <nom>Direction départementale des embouteillages</nom>
-    <theme>GE</theme>
+    <ref_theme>GE</ref_theme>
     <responsable_equipe>M15</responsable_equipe>
     
-    <membres>
-      <membre>M14</membre>
-      <membre>M15</membre>
-    </membres>
+    <ref_membres>
+      <ref_membre>M14</ref_membre>
+      <ref_membre>M15</ref_membre>
+    </ref_membres>
     
     <productions_scientifique>
       <production>PS5</production>
@@ -143,14 +143,14 @@
   
   <equipe_de_recherche acronyme="RPR">
     <nom>Rassemblement des Petits Retraités</nom>
-    <theme>MNBT</theme>
+    <ref_theme>MNBT</ref_theme>
     <responsable_equipe>M16</responsable_equipe>
     
-    <membres>
-      <membre>M16</membre>
-      <membre>M17</membre>
-      <membre>M18</membre>
-    </membres>
+    <ref_membres>
+      <ref_membre>M16</ref_membre>
+      <ref_membre>M17</ref_membre>
+      <ref_membre>M18</ref_membre>
+    </ref_membres>
     
     <productions_scientifique>
       <production>PS5</production>
@@ -161,14 +161,14 @@
   
   <equipe_de_recherche acronyme="CIL">
     <nom>Creation d'un Immense Logiciel</nom>
-    <theme>IC</theme>
+    <ref_theme>IC</ref_theme>
     <responsable_equipe>M18</responsable_equipe>
     
-    <membres>
-      <membre>M17</membre>
-      <membre>M18</membre>
-      <membre>M19</membre>
-    </membres>
+    <ref_membres>
+      <ref_membre>M17</ref_membre>
+      <ref_membre>M18</ref_membre>
+      <ref_membre>M19</ref_membre>
+    </ref_membres>
     
     <productions_scientifique>
       <production>PS7</production>
@@ -178,17 +178,17 @@
   
   <equipe_de_recherche acronyme="OSE">
     <nom>Ordinateur Sans Electricité</nom>
-    <theme>HOPES</theme>
+    <ref_theme>HOPES</ref_theme>
     <responsable_equipe>M18</responsable_equipe>
     
-    <membres>
-      <membre>M20</membre>
-      <membre>M21</membre>
-      <membre>M22</membre>
-      <membre>M23</membre>
-      <membre>M24</membre>
-      <membre>M25</membre>
-    </membres>
+    <ref_membres>
+      <ref_membre>M20</ref_membre>
+      <ref_membre>M21</ref_membre>
+      <ref_membre>M22</ref_membre>
+      <ref_membre>M23</ref_membre>
+      <ref_membre>M24</ref_membre>
+      <ref_membre>M25</ref_membre>
+    </ref_membres>
     
     <productions_scientifique>
       <production>PS8</production>
@@ -199,16 +199,16 @@
   
   <equipe_de_recherche acronyme="OUIA">
     <nom>Ordinateur Utilisant Intelligence Artificielle </nom>
-    <theme>IC</theme>
+    <ref_theme>IC</ref_theme>
     <responsable_equipe>M30</responsable_equipe>
     
-    <membres>
-      <membre>M26</membre>
-      <membre>M27</membre>
-      <membre>M28</membre>
-      <membre>M29</membre>
-      <membre>M30</membre>
-    </membres>
+    <ref_membres>
+      <ref_membre>M26</ref_membre>
+      <ref_membre>M27</ref_membre>
+      <ref_membre>M28</ref_membre>
+      <ref_membre>M29</ref_membre>
+      <ref_membre>M30</ref_membre>
+    </ref_membres>
     
     <productions_scientifique>
       <production>PS9</production>
