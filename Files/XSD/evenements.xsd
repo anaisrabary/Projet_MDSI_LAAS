@@ -10,7 +10,21 @@
 	<xsd:element ref="conferences" />
       </xsd:all>
     </xsd:complexType>
+
+<!-- Identifiant d'une Reunion-->
+	<xsd:key name="ID_Reunion">
+		<xsd:selector xpath=".//reunion"/>
+		<xsd:field xpath="@id" />
+	</xsd:key>
+
+<!-- Identifiant d'une Conference-->
+	<xsd:key name="ID_Conference">
+		<xsd:selector xpath=".//conference"/>
+		<xsd:field xpath="@id" />
+	</xsd:key>
   </xsd:element>	
+
+
 
   <xsd:complexType name="type_evenement">
     <xsd:sequence>
@@ -25,7 +39,7 @@
 	</xsd:complexType>
       </xsd:element>
     </xsd:sequence>
-    <xsd:attribute name="id" type="xsd:token" use="required" />
+		<xsd:attribute name="id" type="xsd:token" use="required" />
   </xsd:complexType>
 
   
@@ -34,6 +48,7 @@
       <xsd:sequence>
 	<xsd:element name="reunion" type="type_evenement" minOccurs="0" />
       </xsd:sequence>
+
     </xsd:complexType>
   </xsd:element>
   
