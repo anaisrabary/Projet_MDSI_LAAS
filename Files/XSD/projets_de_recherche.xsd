@@ -22,46 +22,26 @@
 				<xsd:element name="axes">
 					<xsd:complexType>
 						<xsd:sequence>
-							<xsd:element name="axe" minOccurs="0" maxOccurs="unbounded">
-								<xsd:complexType>
-									<xsd:attribute name="ref" type="xsd:token" use="required" />
-								</xsd:complexType>
-							</xsd:element>
+							<xsd:element name="axe" type="xsd:token" minOccurs="0" maxOccurs="unbounded" />
 						</xsd:sequence>
 					</xsd:complexType>
 				</xsd:element>
 				<xsd:element name="equipes">
 					<xsd:complexType>
 						<xsd:sequence>
-							<xsd:element name="equipe" maxOccurs="unbounded">
-								<xsd:complexType>
-									<xsd:attribute name="ref" type="xsd:token" use="required" />
-								</xsd:complexType>
-							</xsd:element>
+							<xsd:element name="equipe" type="xsd:token" maxOccurs="unbounded" />
 						</xsd:sequence>
 					</xsd:complexType>
 				</xsd:element>
 				<xsd:element name="partenaires_participants">
 					<xsd:complexType>
 						<xsd:sequence>
-							<xsd:element name="partenaire_participant" minOccurs="0" maxOccurs="unbounded">
-								<xsd:complexType>
-									<xsd:attribute name="ref" type="xsd:token" use="required" />
-								</xsd:complexType>
-							</xsd:element>
+							<xsd:element name="partenaire_participant" type="xsd:token" minOccurs="0" maxOccurs="unbounded" />
 						</xsd:sequence>
 					</xsd:complexType>
 				</xsd:element>
-				<xsd:element name="porteur_du_projet">
-					<xsd:complexType>
-						<xsd:attribute name="ref" type="xsd:token" use="required" />
-					</xsd:complexType>
-				</xsd:element>
-				<xsd:element name="rapport_recherche">
-					<xsd:complexType>
-						<xsd:attribute name="ref" type="xsd:token" use="required" />
-					</xsd:complexType>
-				</xsd:element>
+				<xsd:element name="porteur_du_projet" type="xsd:token" />
+				<xsd:element name="rapport_recherche" type="xsd:token" />
 			</xsd:sequence>
 			<xsd:attribute name="acronyme" type="xsd:token" use="required" />
 		</xsd:complexType>
