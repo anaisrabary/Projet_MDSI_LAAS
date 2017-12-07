@@ -15,12 +15,12 @@
 		<xsd:complexType>
 			<xsd:sequence>
 				<xsd:element name="nom" type="xsd:string"/>
-				<xsd:element name="theme" type="xsd:token"/>
+				<xsd:element name="ref_theme" type="xsd:token"/>
 				<xsd:element name="respondable_equipe" type="xsd:token"/>
-				<xsd:element name="membres">
+				<xsd:element name="ref_membres">
 					<xsd:complexType>
 						<xsd:sequence>
-							<xsd:element name="membre" type="xsd:token" minOccurs="1" maxOccurs="unbounded"/>
+							<xsd:element name="ref_membre" type="xsd:token" minOccurs="1" maxOccurs="unbounded"/>
 						</xsd:sequence>
 					</xsd:complexType>
 				</xsd:element>

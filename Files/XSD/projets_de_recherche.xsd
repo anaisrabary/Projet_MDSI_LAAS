@@ -15,7 +15,7 @@
 		<xsd:complexType>
 			<xsd:sequence>
 				<xsd:element name="titre" type="xsd:string" />
-				<xsd:element name="date_debut" type="type_date" />
+				<xsd:element name="date_debut" type="type_date_projet" />
 				<xsd:element name="duree" type="xsd:int" />
 				<xsd:element name="cout_global" type="xsd:float" />
 				<xsd:element name="budget_alloue" type="xsd:float" />
@@ -67,7 +67,7 @@
 		</xsd:complexType>
 	</xsd:element>
 	
-	<xsd:simpleType name="type_date">
+	<xsd:simpleType name="type_date_projet">
 		<xsd:restriction base="xsd:string">
             <xsd:pattern value="[0-9]{2}/[0-9]{2}/[0-9]{4}" />
 		</xsd:restriction>
