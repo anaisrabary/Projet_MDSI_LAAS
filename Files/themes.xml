@@ -4,7 +4,7 @@
 		
 	<theme acronyme="IC">
 		<description>Informatique critique</description>
-		<responsable>M2</responsable>
+		<responsable>M12</responsable>
 	</theme>
 	
 	<theme acronyme="RC">
@@ -19,7 +19,7 @@
 	
 	<theme acronyme="DO">
 		<description>Décision et optimisation</description>
-		<responsable>M7</responsable>
+		<responsable>M30</responsable>
 	</theme>
 	
 	<theme acronyme="HOPES">
@@ -29,7 +29,7 @@
 	
 	<theme acronyme="TICS">
 		<description>Technologie et instrumentation pour le monitoring de systèmes complexes</description>
-		<responsable>M4</responsable>
+		<responsable>M18</responsable>
 	</theme>
 	
 	<theme acronyme="MNBT">
