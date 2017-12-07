@@ -1,116 +1,112 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-	
-	<!-- element racine -->
-	<xsd:element name="productions_scientifiques">
-		<xsd:complexType>
-			<xsd:all>
-				<xsd:element ref="rapports" />
-				<xsd:element ref="articles" />
-				<xsd:element ref="revues" />
-			</xsd:all>
-		</xsd:complexType>
-		
-		<!-- identifiant d'une production -->
-		<xsd:key name="ID_Production_scientifique">
-			<xsd:selector xpath=".//productions_scientifiques"/>
-			<xsd:field xpath="@id" />
-		</xsd:key>
-		
-	</xsd:element>	
+  
+  <!-- element racine -->
+  <xsd:element name="productions_scientifiques">
+    <xsd:complexType>
+      <xsd:all>
+	<xsd:element ref="rapports" />
+	<xsd:element ref="articles" />
+	<xsd:element ref="revues" />
+      </xsd:all>
+    </xsd:complexType>
+    
+    <!-- identifiant d'une production -->
+    <xsd:key name="ID_Production_scientifique">
+      <xsd:selector xpath=".//productions_scientifiques"/>
+      <xsd:field xpath="@id" />
+    </xsd:key>
+    
+  </xsd:element>	
 
-	<xsd:element name="rapports">
-		<xsd:complexType>
-			<xsd:sequence>
-				<xsd:element name="rapport" type="type_production" minOccurs="0" maxOccurs="unbounded" />
-			</xsd:sequence>
-		</xsd:complexType>
-	</xsd:element>
-	
-	<xsd:element name="articles">
-		<xsd:complexType>
-			<xsd:sequence>
-				<xsd:element ref="article" minOccurs="0" maxOccurs="unbounded" />
-			</xsd:sequence>
-		</xsd:complexType>
-	</xsd:element>
-	
-	<xsd:element name="revues">
-		<xsd:complexType>
-			<xsd:sequence>
-				<xsd:element ref="revue" minOccurs="0" maxOccurs="unbounded" />
-			</xsd:sequence>
-		</xsd:complexType>
-	</xsd:element>
-	
-	
-	<xsd:complexType name="type_production">
-		<xsd:sequence>
-			<xsd:element name="titre" type="xsd:string" />
-			<xsd:element name="contenu" type="xsd:string" />
-			<xsd:element name="annee" type="type_annee" />
-			<xsd:element name="nb_pages" type="xsd:int" />
-			<xsd:element name="auteurs">
-				<xsd:complexType>
-					<xsd:sequence>
-						<xsd:element name="auteur" minOccurs="0" maxOccurs="unbounded">
-							<xsd:complexType>
-								<xsd:attribute name="ref" type="xsd:token" use="required" />
-							</xsd:complexType>
-						</xsd:element>
-					</xsd:sequence>
-				</xsd:complexType>
-			</xsd:element>
-		</xsd:sequence>
-		<xsd:attribute name="id" type="xsd:token" use="required" />
+  <xsd:element name="rapports">
+    <xsd:complexType>
+      <xsd:sequence>
+	<xsd:element name="rapport" type="type_production" minOccurs="0" maxOccurs="unbounded" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  
+  <xsd:element name="articles">
+    <xsd:complexType>
+      <xsd:sequence>
+	<xsd:element ref="article" minOccurs="0" maxOccurs="unbounded" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  
+  <xsd:element name="revues">
+    <xsd:complexType>
+      <xsd:sequence>
+	<xsd:element ref="revue" minOccurs="0" maxOccurs="unbounded" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  
+  
+  <xsd:complexType name="type_production">
+    <xsd:sequence>
+      <xsd:element name="titre" type="xsd:string" />
+      <xsd:element name="contenu" type="xsd:string" />
+      <xsd:element name="annee" type="type_annee" />
+      <xsd:element name="nb_pages" type="xsd:int" />
+      <xsd:element name="auteurs">
+	<xsd:complexType>
+	  <xsd:sequence>
+	    <xsd:element name="auteur" type="xsd:token" minOccurs="0" maxOccurs="unbounded"/>
+	  </xsd:sequence>
 	</xsd:complexType>
-	
-	
-	<xsd:element name="article">
-		<xsd:complexType>
-			<xsd:complexContent>
-				<xsd:extension base="type_production">
-					<xsd:sequence>
-						<xsd:element name="conference" type="type_pub" />
-					</xsd:sequence>
-				</xsd:extension>
-			</xsd:complexContent>
-		</xsd:complexType>
-	</xsd:element>
-	
-	<xsd:element name="revue">
-		<xsd:complexType>
-			<xsd:complexContent>
-				<xsd:extension base="type_production">
-					<xsd:sequence>
-						<xsd:element name="journal" type="type_pub" />
-					</xsd:sequence>
-				</xsd:extension>
-			</xsd:complexContent>
-		</xsd:complexType>
-	</xsd:element>
-	
-	<xsd:complexType name="type_pub">
-		<xsd:attribute name="nom" type="xsd:string" use="required" />
-		<xsd:attribute name="classe" type="type_classe" use="required" />
-	</xsd:complexType>
-	
-	<xsd:simpleType name="type_classe">
-		<xsd:restriction base="xsd:string">
-            <xsd:enumeration value="A" />
-            <xsd:enumeration value="B" />
-            <xsd:enumeration value="C" />
-		</xsd:restriction>
-	</xsd:simpleType>
-	
-	
-	<xsd:simpleType name="type_annee">
-		<xsd:restriction base="xsd:string">
-            <xsd:pattern value="[0-9]{4}" />
-		</xsd:restriction>
-	</xsd:simpleType>
-	
+      </xsd:element>
+    </xsd:sequence>
+    <xsd:attribute name="id" type="xsd:token" use="required" />
+  </xsd:complexType>
+  
+  
+  <xsd:element name="article">
+    <xsd:complexType>
+      <xsd:complexContent>
+	<xsd:extension base="type_production">
+	  <xsd:sequence>
+	    <xsd:element name="conference" type="type_pub" />
+	  </xsd:sequence>
+	</xsd:extension>
+      </xsd:complexContent>
+    </xsd:complexType>
+  </xsd:element>
+  
+  <xsd:element name="revue">
+    <xsd:complexType>
+      <xsd:complexContent>
+	<xsd:extension base="type_production">
+	  <xsd:sequence>
+	    <xsd:element name="journal" type="type_pub" />
+	  </xsd:sequence>
+	</xsd:extension>
+      </xsd:complexContent>
+    </xsd:complexType>
+  </xsd:element>
+  
+  <xsd:complexType name="type_pub">
+    <xsd:attribute name="nom" type="xsd:string" use="required" />
+    <xsd:attribute name="classe" type="type_classe" use="required" />
+  </xsd:complexType>
+  
+  <xsd:simpleType name="type_classe">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="A" />
+      <xsd:enumeration value="B" />
+      <xsd:enumeration value="C" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  
+  
+  <xsd:simpleType name="type_annee">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="[0-9]{4}" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  
 </xsd:schema>
 
 

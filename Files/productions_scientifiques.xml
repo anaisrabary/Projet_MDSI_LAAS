@@ -2,52 +2,52 @@
 
 <productions_scientifiques>
 
-	<rapports>
-	
-		<rapport id="RAP1">
-			<titre>Rapport de stage de 3ème</titre>
-			<contenu>bla bla bla</contenu>
-			<annee>2015</annee>
-			<nb_pages>42</nb_pages>
-			<auteurs>
-				<auteur ref="A3" />
-				<auteur ref="A1" />
-			</auteurs>
-		</rapport>
-		
-	</rapports>
-	
-	
-	<articles>
-	
-		<article id="ART3">
-			<titre>Mon super article sur Toulouse</titre>
-			<contenu>bla bla bla</contenu>
-			<annee>2013</annee>
-			<nb_pages>107</nb_pages>
-			<auteurs>
-				<auteur ref="A8" />
-				<auteur ref="A4" />
-			</auteurs>
-			<conference nom="La ville rose" classe="A" />
-		</article>
-	
-	</articles>
-	
-	
-	<revues>
-	
-		<revue id="REV6">
-			<titre>Finance d'entreprise</titre>
-			<contenu>bla bla bla</contenu>
-			<annee>2017</annee>
-			<nb_pages>9</nb_pages>
-			<auteurs>
-				<auteur ref="A11" />
-			</auteurs>
-			<journal nom="La congolexicomatisation des lois du marché" classe="C" />
-		</revue>
-		
-	</revues>
+<rapports>
+  
+  <rapport id="RAP1">
+    <titre>Rapport de stage de 3ème</titre>
+    <contenu>bla bla bla</contenu>
+    <annee>2015</annee>
+    <nb_pages>42</nb_pages>
+    <auteurs>
+      <auteur>A3</auteur>
+      <auteur>A1</auteur>
+    </auteurs>
+  </rapport>
+  
+</rapports>
+
+
+<articles>
+  
+  <article id="ART3">
+    <titre>Mon super article sur Toulouse</titre>
+    <contenu>bla bla bla</contenu>
+    <annee>2013</annee>
+    <nb_pages>107</nb_pages>
+    <auteurs>
+      <auteur>A8</auteur>
+      <auteur>A4</auteur>
+    </auteurs>
+    <conference nom="La ville rose" classe="A" />
+  </article>
+  
+</articles>
+
+
+<revues>
+  
+  <revue id="REV6">
+    <titre>Finance d'entreprise</titre>
+    <contenu>bla bla bla</contenu>
+    <annee>2017</annee>
+    <nb_pages>9</nb_pages>
+    <auteurs>
+      <auteur>A11</auteur>
+    </auteurs>
+    <journal nom="La congolexicomatisation des lois du marché" classe="C" />
+  </revue>
+  
+</revues>
 
 </productions_scientifiques>
