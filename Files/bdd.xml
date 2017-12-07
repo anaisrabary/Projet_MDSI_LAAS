@@ -662,17 +662,17 @@
 		<cout_global>3000000000</cout_global>
 		<budget_alloue>500000</budget_alloue>
 		<axes>
-			<axe ref="ROB"/>
-			<axe ref="IC"/>
+			<axe>ROB</axe>
+			<axe>IC</axe>
 		</axes>
 		<equipes>
-			<equipe ref="DDE"/>
+			<equipe>DDE</equipe>
 		</equipes>
 		<partenaires_participants>
-			<partenaire_participant ref="PP1"/>
+			<partenaire_participant>PP1</partenaire_participant>
 		</partenaires_participants>
-		<porteur_du_projet ref="M14"/>
-		<rapport_recherche ref="RAP1"/>
+		<porteur_du_projet>M14</porteur_du_projet>
+		<rapport_recherche>RAP1</rapport_recherche>
 	</projet_de_recherche>
 	
 
