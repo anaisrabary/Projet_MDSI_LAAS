@@ -293,8 +293,7 @@
     </ref_membres>
     
     <productions_scientifiques>
-      <production>PS1</production>
-      <production>PS2</production>
+      <production>RAP1</production>
     </productions_scientifiques>
 
   </equipe_de_recherche>
@@ -314,7 +313,7 @@
     </ref_membres>
     
     <productions_scientifiques>
-      <production>PS3</production>
+      <production>ART3</production>
     </productions_scientifiques>
 
   </equipe_de_recherche>
@@ -332,6 +331,7 @@
     </ref_membres>
     
     <productions_scientifiques>
+    
     </productions_scientifiques>
 
   </equipe_de_recherche>
@@ -365,7 +365,7 @@
     </ref_membres>
     
     <productions_scientifiques>
-      <production>PS4</production>
+      <production>RAP1</production>
     </productions_scientifiques>
   </equipe_de_recherche>
 
@@ -383,7 +383,9 @@
       <ref_membre>M14</ref_membre>
     </ref_membres>
     
-    <productions_scientifiques/>
+    <productions_scientifiques>
+    
+    </productions_scientifiques>
   </equipe_de_recherche>
 
 
@@ -414,8 +416,8 @@
     </ref_membres>
     
     <productions_scientifiques>
-      <production>PS5</production>
-      <production>PS6</production>
+      <production>REV6</production>
+      <production>ART3</production>
     </productions_scientifiques>
   </equipe_de_recherche>
 
@@ -433,8 +435,8 @@
     </ref_membres>
     
     <productions_scientifiques>
-      <production>PS5</production>
-      <production>PS6</production>
+      <production>REV6</production>
+      <production>ART3</production>
     </productions_scientifiques>
   </equipe_de_recherche>
 
@@ -451,7 +453,7 @@
     </ref_membres>
     
     <productions_scientifiques>
-      <production>PS7</production>
+      <production>REV6</production>
     </productions_scientifiques>
   </equipe_de_recherche>
 
@@ -471,7 +473,7 @@
     </ref_membres>
     
     <productions_scientifiques>
-      <production>PS8</production>
+	
     </productions_scientifiques>
   </equipe_de_recherche>
 
@@ -491,8 +493,9 @@
     </ref_membres>
     
     <productions_scientifiques>
-      <production>PS9</production>
-      <production>PS10</production>
+      <production>RAP1</production>
+      <production>ART3</production>
+      <production>REV6</production>
     </productions_scientifiques>
   </equipe_de_recherche>
 
@@ -605,9 +608,7 @@
 </partenaires_participants>
   <productions_scientifiques>
 
-<rapports>
-  
-  <rapport id="RAP1">
+<production id="RAP1" type="RAP">
     <titre>Rapport de stage de 3ème</titre>
     <contenu>bla bla bla</contenu>
     <annee>2015</annee>
@@ -616,14 +617,11 @@
       <auteur>A3</auteur>
       <auteur>A1</auteur>
     </auteurs>
-  </rapport>
+  </production>
   
-</rapports>
 
-
-<articles>
   
-  <article id="ART3">
+  <production id="ART3" type="ART">
     <titre>Mon super article sur Toulouse</titre>
     <contenu>bla bla bla</contenu>
     <annee>2013</annee>
@@ -633,14 +631,11 @@
       <auteur>A4</auteur>
     </auteurs>
     <conference nom="La ville rose" classe="A"/>
-  </article>
+  </production>
   
-</articles>
-
-
-<revues>
   
-  <revue id="REV6">
+  
+  <production id="REV6" type="REV">
     <titre>Finance d'entreprise</titre>
     <contenu>bla bla bla</contenu>
     <annee>2017</annee>
@@ -649,9 +644,9 @@
       <auteur>A11</auteur>
     </auteurs>
     <journal nom="La congolexicomatisation des lois du marché" classe="C"/>
-  </revue>
-  
-</revues>
+  </production>
+
+
 
 </productions_scientifiques>
   <projets_de_recherche>

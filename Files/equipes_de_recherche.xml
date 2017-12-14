@@ -14,8 +14,7 @@
     </ref_membres>
     
     <productions_scientifiques>
-      <production>PS1</production>
-      <production>PS2</production>
+      <production>RAP1</production>
     </productions_scientifiques>
 
   </equipe_de_recherche>
@@ -35,7 +34,7 @@
     </ref_membres>
     
     <productions_scientifiques>
-      <production>PS3</production>
+      <production>ART3</production>
     </productions_scientifiques>
 
   </equipe_de_recherche>
@@ -53,6 +52,7 @@
     </ref_membres>
     
     <productions_scientifiques>
+    
     </productions_scientifiques>
 
   </equipe_de_recherche>
@@ -86,7 +86,7 @@
     </ref_membres>
     
     <productions_scientifiques>
-      <production>PS4</production>
+      <production>RAP1</production>
     </productions_scientifiques>
   </equipe_de_recherche>
 
@@ -104,7 +104,9 @@
       <ref_membre>M14</ref_membre>
     </ref_membres>
     
-    <productions_scientifiques></productions_scientifiques>
+    <productions_scientifiques>
+    
+    </productions_scientifiques>
   </equipe_de_recherche>
 
 
@@ -135,8 +137,8 @@
     </ref_membres>
     
     <productions_scientifiques>
-      <production>PS5</production>
-      <production>PS6</production>
+      <production>REV6</production>
+      <production>ART3</production>
     </productions_scientifiques>
   </equipe_de_recherche>
 
@@ -154,8 +156,8 @@
     </ref_membres>
     
     <productions_scientifiques>
-      <production>PS5</production>
-      <production>PS6</production>
+      <production>REV6</production>
+      <production>ART3</production>
     </productions_scientifiques>
   </equipe_de_recherche>
 
@@ -172,7 +174,7 @@
     </ref_membres>
     
     <productions_scientifiques>
-      <production>PS7</production>
+      <production>REV6</production>
     </productions_scientifiques>
   </equipe_de_recherche>
 
@@ -192,7 +194,7 @@
     </ref_membres>
     
     <productions_scientifiques>
-      <production>PS8</production>
+	
     </productions_scientifiques>
   </equipe_de_recherche>
 
@@ -212,8 +214,9 @@
     </ref_membres>
     
     <productions_scientifiques>
-      <production>PS9</production>
-      <production>PS10</production>
+      <production>RAP1</production>
+      <production>ART3</production>
+      <production>REV6</production>
     </productions_scientifiques>
   </equipe_de_recherche>
 
