@@ -39,11 +39,13 @@
 			<xsd:field xpath="responsable" />
 		</xsd:keyref>
 		
-<!-- référence à l'identifiant deu Responsable d'une equipe -->
-	<xsd:keyref name="ref_ID_Responsable_Equipe" refer="ID_Membre">
+		<!-- référence à l'identifiant du Responsable d'une equipe -->
+		<xsd:keyref name="ref_ID_Responsable_Equipe" refer="ID_Membre">
 			<xsd:selector xpath="./equipes_de_recherche/equipe_de_recherche" />
 			<xsd:field xpath="responsable_equipe" />
 		</xsd:keyref>
+		
+		
 	</xsd:element>	
 
 <!-- référence à l'identifiant des membres dans une equipe 

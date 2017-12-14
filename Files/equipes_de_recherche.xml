@@ -13,10 +13,10 @@
       <ref_membre>M3</ref_membre>
     </ref_membres>
     
-    <productions_scientifique>
+    <productions_scientifiques>
       <production>PS1</production>
       <production>PS2</production>
-    </productions_scientifique>
+    </productions_scientifiques>
 
   </equipe_de_recherche>
 
@@ -34,9 +34,9 @@
       <ref_membre>M7</ref_membre>
     </ref_membres>
     
-    <productions_scientifique>
+    <productions_scientifiques>
       <production>PS3</production>
-    </productions_scientifique>
+    </productions_scientifiques>
 
   </equipe_de_recherche>
 
@@ -52,8 +52,8 @@
       <ref_membre>M9</ref_membre>
     </ref_membres>
     
-    <productions_scientifique>
-    </productions_scientifique>
+    <productions_scientifiques>
+    </productions_scientifiques>
 
   </equipe_de_recherche>
 
@@ -68,8 +68,9 @@
       <ref_membre>M10</ref_membre>
     </ref_membres>
     
-    <productions_scientifique>
-    </productions_scientifique>
+    <productions_scientifiques>
+    
+    </productions_scientifiques>
 
   </equipe_de_recherche>
 
@@ -84,9 +85,9 @@
       <ref_membre>M12</ref_membre>
     </ref_membres>
     
-    <productions_scientifique>
+    <productions_scientifiques>
       <production>PS4</production>
-    </productions_scientifique>
+    </productions_scientifiques>
   </equipe_de_recherche>
 
 
@@ -103,7 +104,7 @@
       <ref_membre>M14</ref_membre>
     </ref_membres>
     
-    <productions_scientifique></productions_scientifique>
+    <productions_scientifiques></productions_scientifiques>
   </equipe_de_recherche>
 
 
@@ -118,7 +119,7 @@
       <ref_membre>M15</ref_membre>
     </ref_membres>
     
-    <productions_scientifique></productions_scientifique>
+    <productions_scientifiques></productions_scientifiques>
   </equipe_de_recherche>
 
 
@@ -133,10 +134,10 @@
       <ref_membre>M15</ref_membre>
     </ref_membres>
     
-    <productions_scientifique>
+    <productions_scientifiques>
       <production>PS5</production>
       <production>PS6</production>
-    </productions_scientifique>
+    </productions_scientifiques>
   </equipe_de_recherche>
 
 
@@ -152,10 +153,10 @@
       <ref_membre>M18</ref_membre>
     </ref_membres>
     
-    <productions_scientifique>
+    <productions_scientifiques>
       <production>PS5</production>
       <production>PS6</production>
-    </productions_scientifique>
+    </productions_scientifiques>
   </equipe_de_recherche>
 
   
@@ -170,9 +171,9 @@
       <ref_membre>M19</ref_membre>
     </ref_membres>
     
-    <productions_scientifique>
+    <productions_scientifiques>
       <production>PS7</production>
-    </productions_scientifique>
+    </productions_scientifiques>
   </equipe_de_recherche>
 
   
@@ -190,9 +191,9 @@
       <ref_membre>M25</ref_membre>
     </ref_membres>
     
-    <productions_scientifique>
+    <productions_scientifiques>
       <production>PS8</production>
-    </productions_scientifique>
+    </productions_scientifiques>
   </equipe_de_recherche>
 
 
@@ -210,10 +211,10 @@
       <ref_membre>M30</ref_membre>
     </ref_membres>
     
-    <productions_scientifique>
+    <productions_scientifiques>
       <production>PS9</production>
       <production>PS10</production>
-    </productions_scientifique>
+    </productions_scientifiques>
   </equipe_de_recherche>
 
   

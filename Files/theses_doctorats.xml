@@ -21,7 +21,7 @@
 			<theme>RC</theme>
 			<equipe>RPR</equipe>
 			<productions>
-				<article>ART3</article>
+				<production>ART3</production>
 			</productions> 
 		</these_en_cours>
 	
@@ -32,7 +32,7 @@
 			<theme>MNBT</theme>
 			<equipe>RPR</equipe>
 			<productions>
-				<revue>REV6</revue>
+				<production>REV6</production>
 			</productions> 
 		</these_en_cours>
 	
