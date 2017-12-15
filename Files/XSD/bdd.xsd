@@ -107,6 +107,33 @@
 			<xsd:field xpath="." />
 		</xsd:keyref>
 		
+		<!-- fichier projets_de_recherche.xml -->
+		
+		<!-- référence aux thèmes (axes) des projets --> 
+		<xsd:keyref name="ref_ID_Theme_Projet" refer="ID_Theme">
+			<xsd:selector xpath="./projets_de_recherche/projet_de_recherche/axes/axe" />
+			<xsd:field xpath="." />
+		</xsd:keyref>
+		
+		<!-- référence aux équipes de recherche des projets --> 
+		<xsd:keyref name="ref_ID_Equipe_Projet" refer="ID_Equipe">
+			<xsd:selector xpath="./projets_de_recherche/projet_de_recherche/equipes/equipe" />
+			<xsd:field xpath="." />
+		</xsd:keyref>
+		
+		<!-- référence aux partenaires des projets --> 
+		<xsd:keyref name="ref_ID_Partenaire_Projet" refer="ID_Partenaire_Participant">
+			<xsd:selector xpath="./projets_de_recherche/projet_de_recherche/partenaires_participants/partenaire_participant" />
+			<xsd:field xpath="." />
+		</xsd:keyref>
+		
+		<!-- référence au membre porteur d'un projet -->
+		<xsd:keyref name="ref_ID_Membre_porteur_Projet" refer="ID_Membre">
+			<xsd:selector xpath="./projets_de_recherche/projet_de_recherche" />
+			<xsd:field xpath="porteur_du_projet" />
+		</xsd:keyref>
+		
+		
 	</xsd:element>	
 
 	

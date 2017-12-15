@@ -16,7 +16,6 @@
       <xsd:field xpath="@id" />
     </xsd:key>
     
-    
   </xsd:element>	
 
 	<xsd:element name="production">
