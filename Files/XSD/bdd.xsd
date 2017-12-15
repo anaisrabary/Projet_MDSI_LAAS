@@ -73,6 +73,12 @@
 			<xsd:field xpath="equipe_de_recherche" />
 		</xsd:keyref>
 		
+		<!-- référence à l'identifiant des auteurs des productions scientifiques --> 
+		<xsd:keyref name="ref_ID_Auteur_Production_scientifique" refer="ID_Auteur">
+			<xsd:selector xpath="./productions_scientifiques/production/auteurs/auteur" />
+			<xsd:field xpath="." />
+		</xsd:keyref>
+		
 		
 		
 	</xsd:element>	

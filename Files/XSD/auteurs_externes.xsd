@@ -6,9 +6,19 @@
 	<xsd:element name="auteurs_externes">
 		<xsd:complexType>
 			<xsd:sequence>
-				<xsd:element name="auteur_externe" maxOccurs="unbounded" />
+				<xsd:element ref="auteur_externe" maxOccurs="unbounded" />
 			</xsd:sequence>
 		</xsd:complexType>
+		
+		
+			<!-- identifiant d'un auteur -->
+		<xsd:key name="ID_Auteur">
+		  <xsd:selector xpath=".//auteur_externe"/>
+		  <xsd:field xpath="@id" />
+		</xsd:key>
+    
+    
+    
 	</xsd:element>	
 
 	<xsd:element name="auteur_externe">
@@ -17,7 +27,7 @@
 				<xsd:element name="nom" type="xsd:string"/>
 				<xsd:element name="affiliation" type="xsd:string"/>
 			</xsd:sequence>
-		<xsd:attribute name="id" type="xsd:token" use="required" />
+			<xsd:attribute name="id" type="xsd:token" use="required" />
 		</xsd:complexType>
 	</xsd:element>
 
