@@ -39,6 +39,7 @@
 			<xsd:field xpath="responsable" />
 		</xsd:keyref>
 		
+		<!-- référence à l'identifiant du thème des équipes -->
 		<xsd:keyref name="ref_ID_Theme_Equipe" refer="ID_Theme">
 			<xsd:selector xpath="./equipes_de_recherche/equipe_de_recherche" />
 			<xsd:field xpath="ref_theme" />
@@ -61,6 +62,18 @@
 			<xsd:selector xpath="./equipes_de_recherche/equipe_de_recherche/productions_scientifiques/production" />
 			<xsd:field xpath="." />
 		</xsd:keyref>
+		
+		<!-- référence à l'identifiant des équipes de recherche dans les évènements -->
+		<xsd:keyref name="ref_ID_Equipe_Evenement_Reunion" refer="ID_Equipe">
+			<xsd:selector xpath="./evenements/reunions/reunion/equipes" />
+			<xsd:field xpath="equipe_de_recherche" />
+		</xsd:keyref>
+		<xsd:keyref name="ref_ID_Equipe_Evenement_Conference" refer="ID_Equipe">
+			<xsd:selector xpath="./evenements/conferences/conference/equipes" />
+			<xsd:field xpath="equipe_de_recherche" />
+		</xsd:keyref>
+		
+		
 		
 	</xsd:element>	
 
