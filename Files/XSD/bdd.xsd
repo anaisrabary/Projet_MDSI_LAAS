@@ -33,11 +33,15 @@
 			Références des clés étrangères entres les différents éléments
 		-->
 		
+		<!-- fichier themes.xml -->
+		
 		<!-- référence à l'identifiant du responsable d'un thème dans l'ensemble des membres -->
 		<xsd:keyref name="ref_ID_Responsable_Theme" refer="ID_Membre">
 			<xsd:selector xpath="./themes/theme" />
 			<xsd:field xpath="responsable" />
 		</xsd:keyref>
+		
+		<!-- fichier equipes_de_recherche.xml -->
 		
 		<!-- référence à l'identifiant du thème des équipes -->
 		<xsd:keyref name="ref_ID_Theme_Equipe" refer="ID_Theme">
@@ -63,6 +67,8 @@
 			<xsd:field xpath="." />
 		</xsd:keyref>
 		
+		<!-- fichier evenements.xml -->
+		
 		<!-- référence à l'identifiant des équipes de recherche dans les évènements -->
 		<xsd:keyref name="ref_ID_Equipe_Evenement_Reunion" refer="ID_Equipe">
 			<xsd:selector xpath="./evenements/reunions/reunion/equipes" />
@@ -73,13 +79,33 @@
 			<xsd:field xpath="equipe_de_recherche" />
 		</xsd:keyref>
 		
+		<!-- fichier productions_scientifiques.xml -->
+		
 		<!-- référence à l'identifiant des auteurs des productions scientifiques --> 
 		<xsd:keyref name="ref_ID_Auteur_Production_scientifique" refer="ID_Auteur">
 			<xsd:selector xpath="./productions_scientifiques/production/auteurs/auteur" />
 			<xsd:field xpath="." />
 		</xsd:keyref>
 		
+		<!-- fichier theses_doctorats.xml -->
 		
+		<!-- référence à l'identifiant du thème des thèses -->
+		<xsd:keyref name="ref_ID_Theme_These" refer="ID_Theme">
+			<xsd:selector xpath="./theses_doctorats/*/*" />
+			<xsd:field xpath="theme" />
+		</xsd:keyref>
+		
+		<!-- référence à l'identifiant de l'équipe de recherche associée à une thèse -->
+		<xsd:keyref name="ref_ID_Equipe_Thèse" refer="ID_Equipe">
+			<xsd:selector xpath="./theses_doctorats/*/*" />
+			<xsd:field xpath="equipe" />
+		</xsd:keyref>
+		
+		<!-- référence à l'identifiant des productions d'une thèse --> 
+		<xsd:keyref name="ref_ID_Production_scientifique_These" refer="ID_Production_scientifique">
+			<xsd:selector xpath="./theses_doctorats/*/*/productions/production" />
+			<xsd:field xpath="." />
+		</xsd:keyref>
 		
 	</xsd:element>	
 
