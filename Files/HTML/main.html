@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<title>MDSI Projet | LAAS - Laboratoire d'Analyse et d'Architecture des Systèmes</title>
+
+		<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://cdn.anychart.com/releases/8.0.1/js/anychart-base.min.js"></script>
+		<script type="text/javascript" src="https://cdn.anychart.com/releases/8.0.1/js/anychart-data-adapter.min.js"></script>
+
+		<style type="text/css">
+			
+			html, body {
+				height: 100%;
+				margin: 0; padding: 0;
+			}
+			body {
+				display: table;
+				width: 100%;
+			}
+			
+			.footer {
+				display: table-row;
+				height: auto;
+				background: #b5b5b5;
+			}
+			
+			.footer div {			
+				padding-top: 3px;
+			}
+			
+			div.page-header {
+				top: -40px;
+			}
+			
+			nav.navbar {
+				top: 73px;
+			}
+			
+			div.sep {
+				top: 70px;
+				border: 1px solid black;
+				margin-left:-3px;
+				margin-right:-3px;
+			}
+			
+			div.wrapper-img {
+				background: white;
+				border-radius: 10px;
+				box-shadow: 4px 4px 8px grey;
+				padding: 5px;
+				width: 230px;
+				text-align: center;
+			}
+			
+			div.center {
+				text-align: center;
+			}
+			
+			div.data {
+				display: none;
+			}
+			
+			
+			.membre {
+				border: 0.5px solid grey;
+				box-shadow: 2px 2px 4px grey;
+				border-radius: 8px;
+				padding-left: 15px;
+				margin-bottom: 5px;
+			}
+			
+			.theme {
+				border: 0.5px solid grey;
+				box-shadow: 2px 2px 4px grey;
+				border-radius: 8px;
+				padding-left: 15px;
+				margin-bottom: 5px;
+			}
+			
+			.evenement {
+				border: 0.5px solid grey;
+				box-shadow: 2px 2px 4px grey;
+				border-radius: 8px;
+				padding-left: 15px;
+				margin-bottom: 5px;
+			}
+		</style>
+		
+		
+	</head>
+	
+	<body>
+	
+	
+	
+	<script type="text/javascript">
+	
+	$(document).ready(function() {
+		
+		$("a.navbar-brand").click(function() {
+			$(".active").removeClass("active");
+			$("div#presentation").addClass("active");
+		});
+		
+		$("ul.nav a").click(function(e) {
+			e.preventDefault();
+			$(".active").removeClass("active");
+			$("div" + $(this).attr("href")).addClass("active");
+		});
+		
+		/*
+		
+		var tab = [];
+		
+		$("div#membres div.row div.membre").each(function(index) {
+			
+			var data = $(this).find("p").text();			
+			
+			var info = data.split(" - ");
+			
+			var nom = info[0].trim();
+			var prenom = info[1].split("(")[0].trim();
+			
+			
+			
+			var grade = info[1].split("(")[1].split(")")[0];
+		
+			var mail = info[1].split("(")[1].split(")")[1]
+			
+			/*
+			console.log(nom);
+			console.log(prenom);
+			console.log(grade);			
+			console.log(mail);
+			console.info("----------");			
+			*/
+			
+			/*
+			tab.push([grade, nom, prenom, mail]);
+			
+		});
+		
+		*/
+		
+		var getGrade = function(grade) {
+			switch(grade) {
+				case "PR": return "Professeur";
+				case "MCF": return "Maître de conférences";
+				case "Doctorant": return "Doctorant";
+				default: return "Inconnu";
+			}
+		};
+		
+		
+		$("button[data-target='#modal-membre-responsable-theme']").click(function() {
+		
+			var nom = $(this).parent().next().find(".nom").text();
+			var prenom = $(this).parent().next().find(".prenom").text();
+			var grade = $(this).parent().next().find(".grade").text();
+			var email = $(this).parent().next().find(".email").text();
+			var acro = $(this).parent().parent().find(".acronyme").text();
+			
+			
+			var content = "<ul><li>nom : " + nom + "</li>";
+			content += "<li>prenom : " + prenom + "</li>";
+			content += "<li>grade : " + getGrade(grade) + "</li>";
+			content += "<li>email : <a href=\"mailto:" + email + "\">" + $(this).parent().next().find(".email").text() + "</a></li></ul>";
+			
+			
+			$("#modal-membre-responsable-theme .modal-title").html("Responsable " + acro);
+			
+			$("div#modal-membre-responsable-theme .modal-body").html(content);
+			
+			
+			
+		});
+		
+		
+		
+		$("button[data-target='#modal-equipe-evenement']").click(function() {
+		
+			var nom = $(this).parent().next().find(".nom_resp").text();
+			var prenom = $(this).parent().next().find(".prenom_resp").text();
+			var grade = $(this).parent().next().find(".grade_resp").text();
+			var email = $(this).parent().next().find(".email_resp").text();
+			var theme_id = $(this).parent().next().find(".theme_id").text();
+			var theme = $(this).parent().next().find(".theme").text();
+			var acro = $(this).parent().next().find(".acronyme").text();
+		
+			
+			var content = "<p>Thème de recherche : <kbd>" + theme_id + "</kbd> " + theme + "</p>";
+			content += "<p>Responsable</p>";
+			content += "<ul><li>nom : " + nom + "</li>";
+			content += "<li>prenom : " + prenom + "</li>";
+			content += "<li>grade : " + getGrade(grade) + "</li>";
+			content += "<li>email : <a href=\"mailto:" + email + "\">" + email + "</a></li></ul>";
+			
+			
+			$("#modal-equipe-evenement .modal-title").html("Equipe " + acro);
+			
+			$("div#modal-equipe-evenement .modal-body").html(content);
+			
+			
+			
+		});
+		
+		
+		
+		
+		
+		
+	});
+	
+	</script>
+	
+		<div class="container-fluid" style="padding-top:150px;margin-bottom:10px;">
+
+			<!-- Header -->
+			<div class="page-header navbar navbar-default navbar-fixed-top">
+				<h2>Projet MDSI <small>Modélisation des données des Systèmes d'Information</small></h2>
+			</div>
+			
+			<div class="sep navbar navbar-default navbar-fixed-top"></div>
+			
+			<!-- Fixed navbar -->
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#presentation" aria-controls="home" role="tab" data-toggle="tab">Présentation</a>
+					</div>
+					<div id="navbar" class="navbar-collapse collapse">
+					
+						<!-- Nav tabs -->
+						<ul class="nav nav-pills">
+							<li><a href="#evenements" aria-controls="home" role="tab" data-toggle="tab">&Eacute;vênements</a></li>
+							<li><a href="#productions" aria-controls="productions" role="tab" data-toggle="tab">Productions scientifiques</a></li>
+							<li><a href="#equipes" aria-controls="equipes" role="tab" data-toggle="tab">&Eacute;quies de recherche</a></li>
+							<li><a href="#themes" aria-controls="themes" role="tab" data-toggle="tab">Thèmes de recherche</a></li>
+							<li><a href="#membres" aria-controls="membres" role="tab" data-toggle="tab">Membres</a></li>
+							<li><a href="#vue" aria-controls="vue" role="tab" data-toggle="tab">Vue globale</a></li>
+						</ul>
+					</div><!--/.nav-collapse -->
+				</div><!--/.container-fluid -->
+			</nav>
+
+			<!-- content -->
+			<div class="container-fluid tab-content" style="margin-top:-30px">
+			
+			
+				<div role="tabpanel" class="tab-pane active" id="presentation">
+				
+					<h4>Projet de MSDI</h4>
+					<p>Projet de Modélisation des Données des Systèmes d'Information dans le cadre de l'enseignement en 4IR à l'INSA de Toulouse.</p>
+					<p>&Agrave; partir d'un cahier des charges, concevoir une base de données en XML pour la gestion des évênements du LAAS.
+					Générer différentes vues de ces données en HTML/CSS via une transformation XSLT.</p>
+					
+				</div>
+			
+				<div role="tabpanel" class="tab-pane" id="evenements">
+				
+					<h3>&Eacute;vênements</h3>
+					
+					
+					<!-- Modal -->
+					<div class="modal fade" id="modal-equipe-evenement" tabindex="-1" role="dialog" aria-labelledby="modal-equipe-evenementLabel">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									<h4 class="modal-title" id="modal-equipe-evenementLabel">   </h4>
+								</div>
+								<div class="modal-body">
+									
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					
+					
+
+
+  <div class="row"><div class="col-xs-12 col-sm-6 col-md-6"><div class="evenement">
+<h4>Raclette du nouvel an du LAAS</h4>
+<p>Date de début : <kbd>28/12/2017-08:00</kbd></p>
+<p>Date de fin : <kbd>31/12/2017-23:59</kbd></p>
+</div></div></div>
+
+  <div class="row"><div class="col-xs-12 col-sm-6 col-md-6"><div class="evenement">
+<h4>La raclette chez les chercheurs </h4>
+<p>Date de début : <kbd>10/01/2018-15:12</kbd></p>
+<p>Date de fin : <kbd>10/01/2018-15:13</kbd></p>
+</div></div></div>
+
+
+  
+
+					
+					
+				
+				</div>
+				
+				
+				<div role="tabpanel" class="tab-pane" id="productions">
+				
+					<h3>Productions scientifiques</h3>
+				
+				</div>
+				
+				
+				<div role="tabpanel" class="tab-pane" id="equipes">
+				
+					<h3>&Eacute;quipes de recherche</h3>
+				
+				</div>
+				
+				
+				<div role="tabpanel" class="tab-pane" id="themes">
+				
+					<h3>Thèmes de recherche</h3>
+						
+						<!-- Modal -->
+						<div class="modal fade" id="modal-membre-responsable-theme" tabindex="-1" role="dialog" aria-labelledby="modal-membre-responsable-themeLabel">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title" id="modal-membre-responsable-themeLabel">   </h4>
+									</div>
+									<div class="modal-body">
+										
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+			
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6"><div class="theme">
+<p><kbd>IC</kbd> Informatique critique</p>
+<p>Responsable : <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-membre-responsable-theme">Balmaské Alonzo</button><div class="data">
+<span class="nom">Balmaské</span><span class="prenom">Alonzo</span><span class="grade">Doctorant</span><span class="email">alonzo.balmaske@laas.fr</span>
+</div></p>
+</div></div>
+<div class="col-xs-12 col-sm-6 col-md-6"><div class="theme">
+<p><kbd>RC</kbd> Réseaux et communication</p>
+<p>Responsable : <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-membre-responsable-theme">Bill Tcherno</button><div class="data">
+<span class="nom">Bill</span><span class="prenom">Tcherno</span><span class="grade">PR</span><span class="email">tcherno.bill@laas.fr</span>
+</div></p>
+</div></div>
+<div class="col-xs-12 col-sm-6 col-md-6"><div class="theme">
+<p><kbd>ROB</kbd> Robotique</p>
+<p>Responsable : <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-membre-responsable-theme">Bistrot Alonzo</button><div class="data">
+<span class="nom">Bistrot</span><span class="prenom">Alonzo</span><span class="grade">MCF</span><span class="email">alonzo.bistrot@laas.fr</span>
+</div></p>
+</div></div>
+<div class="col-xs-12 col-sm-6 col-md-6"><div class="theme">
+<p><kbd>DO</kbd> Décision et optimisation</p>
+<p>Responsable : <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-membre-responsable-theme">Ileosud Eleonore</button><div class="data">
+<span class="nom">Ileosud</span><span class="prenom">Eleonore</span><span class="grade">Doctorant</span><span class="email">nordsud@laas.fr</span>
+</div></p>
+</div></div>
+<div class="col-xs-12 col-sm-6 col-md-6"><div class="theme">
+<p><kbd>HOPES</kbd> Hyperfréquence et optique</p>
+<p>Responsable : <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-membre-responsable-theme">Pran Dolly</button><div class="data">
+<span class="nom">Pran</span><span class="prenom">Dolly</span><span class="grade">MCF</span><span class="email">pran@laas.fr</span>
+</div></p>
+</div></div>
+<div class="col-xs-12 col-sm-6 col-md-6"><div class="theme">
+<p><kbd>TICS</kbd> Technologie et instrumentation pour le monitoring de systèmes complexes</p>
+<p>Responsable : <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-membre-responsable-theme">Crush Candy</button><div class="data">
+<span class="nom">Crush</span><span class="prenom">Candy</span><span class="grade">Doctorant</span><span class="email">candy.crush@laas.fr</span>
+</div></p>
+</div></div>
+<div class="col-xs-12 col-sm-6 col-md-6"><div class="theme">
+<p><kbd>MNBT</kbd> Micro nano bio technologies</p>
+<p>Responsable : <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-membre-responsable-theme">Bill Tcherno</button><div class="data">
+<span class="nom">Bill</span><span class="prenom">Tcherno</span><span class="grade">PR</span><span class="email">tcherno.bill@laas.fr</span>
+</div></p>
+</div></div>
+<div class="col-xs-12 col-sm-6 col-md-6"><div class="theme">
+<p><kbd>GE</kbd> Gestion de l'énergie</p>
+<p>Responsable : <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-membre-responsable-theme">Minie Cathy</button><div class="data">
+<span class="nom">Minie</span><span class="prenom">Cathy</span><span class="grade">PR</span><span class="email">cathy.minie@laas.fr</span>
+</div></p>
+</div></div>
+</div>
+					
+				
+				</div>
+				
+				
+				<div role="tabpanel" class="tab-pane" id="membres">
+				
+					<h3>Membres du laboratoire</h3>
+
+
+<div class="row">
+<div class="col-xs-6 col-sm-4 col-md-3"><div class="membre">
+<p>Bistrot - Alonzo (MCF)</p>
+<p>alonzo.bistrot@laas.fr</p>
+</div></div>
+<div class="col-xs-6 col-sm-4 col-md-3"><div class="membre">
+<p>Pran - Dolly (MCF)</p>
+<p>pran@laas.fr</p>
+</div></div>
+<div class="col-xs-6 col-sm-4 col-md-3"><div class="membre">
+<p>Dorsa - Elsa (MCF)</p>
+<p>elsa.dorsa@laas.fr</p>
+</div></div>
+<div class="col-xs-6 col-sm-4 col-md-3"><div class="membre">
+<p>Evenu - Hilaire (MCF)</p>
+<p>hilairevenu@laas.fr</p>
+</div></div>
+<div class="col-xs-6 col-sm-4 col-md-3"><div class="membre">
+<p>Péré - Ines (MCF)</p>
+<p>ines.pere@laas.fr</p>
+</div></div>
+<div class="col-xs-6 col-sm-4 col-md-3"><div class="membre">
+<p>Nieur - Inge (MCF)</p>
+<p>ingenieur@laas.fr</p>
+</div></div>
+<div class="col-xs-6 col-sm-4 col-md-3"><div class="membre">
+<p>Orlapizza - Jade (MCF)</p>
+<p>jade.orlapizza@laas.fr</p>
+</div></div>
+<div class="col-xs-6 col-sm-4 col-md-3"><div class="membre">
+<p>Dmépassa - Jeanne (MCF)</p>
+<p>jeanne.dmepassa@laas.fr</p>
+</div></div>
+<div class="col-xs-6 col-sm-4 col-md-3"><div class="membre">
+<p>Keunitet - Jenny (MCF)</p>
+<p>jenny.keunitet@laas.fr</p>
+</div></div>
+<div class="col-xs-6 col-sm-4 col-md-3"><div class="membre">
+<p>Uncou - Juste (MCF)</p>
+<p>juste.uncou@laas.fr</p>
+</div></div>
+<div class="col-xs-6 col-sm-4 col-md-3"><div class="membre">
+<p>Ange - Lou (MCF)</p>
+<p>lou.ange@laas.fr</p>
+</div></div>
+<div class="col-xs-6 col-sm-4 col-md-3"><div class="membre">
+<p>Hole - Lucie (MCF)</p>
+<p>lucie.hole@laas.fr</p>
+</div></div>
+</div><hr><div class="row">
+<div class="col-xs-6 col-sm-4 col-md-3"><div class="membre">
+<p>Bill - Tcherno (PR)</p>
+<p>tcherno.bill@laas.fr</p>
+</div></div>
+<div class="col-xs-6 col-sm-4 col-md-3"><div class="membre">
+<p>Minie - Cathy (PR)</p>
+<p>cathy.minie@laas.fr</p>
+</div></div>
+<div class="col-xs-6 col-sm-4 col-md-3"><div class="membre">
+<p>Lapeche - Ella (PR)</p>
+<p>lapeche@laas.fr</p>
+</div></div>
+<div class="col-xs-6 col-sm-4 col-md-3"><div class="membre">
+<p>Deplaisant - Fort (PR)</p>
+<p>fort.deplaisant@laas.fr</p>
+</div></div>
+<div class="col-xs-6 col-sm-4 col-md-3"><div class="membre">
+<p>Mendufric - Gerard (PR)</p>
+<p>gerarmendufric@laas.fr</p>
+</div></div>
+<div class="col-xs-6 col-sm-4 col-md-3"><div class="membre">
+<p>Le Paquet - Jamie (PR)</p>
+<p>jamielepaquet@laas.fr</p>
+</div></div>
+<div class="col-xs-6 col-sm-4 col-md-3"><div class="membre">
+<p>Goldage - Larry (PR)</p>
+<p>larry.golade@laas.fr</p>
+</div></div>
+<div class="col-xs-6 col-sm-4 col-md-3"><div class="membre">
+<p>Commandement - Lydie (PR)</p>
+<p>les10commandements@laas.fr</p>
+</div></div>
+</div><hr><div class="row">
+<div class="col-xs-6 col-sm-4 col-md-3"><div class="membre">
+<p>Balmaské - Alonzo (Doctorant)</p>
+<p>alonzo.balmaske@laas.fr</p>
+</div></div>
+<div class="col-xs-6 col-sm-4 col-md-3"><div class="membre">
+<p>Crush - Candy (Doctorant)</p>
+<p>candy.crush@laas.fr</p>
+</div></div>
+<div class="col-xs-6 col-sm-4 col-md-3"><div class="membre">
+<p>Ileosud - Eleonore (Doctorant)</p>
+<p>nordsud@laas.fr</p>
+</div></div>
+<div class="col-xs-6 col-sm-4 col-md-3"><div class="membre">
+<p>Opost - Fidel (Doctorant)</p>
+<p>fidelopost@laas.fr</p>
+</div></div>
+<div class="col-xs-6 col-sm-4 col-md-3"><div class="membre">
+<p>Couzy - Jacques (Doctorant)</p>
+<p>jacques.couzy@laas.fr</p>
+</div></div>
+<div class="col-xs-6 col-sm-4 col-md-3"><div class="membre">
+<p>Deuf - John (Doctorant)</p>
+<p>john.deuf@laas.fr</p>
+</div></div>
+<div class="col-xs-6 col-sm-4 col-md-3"><div class="membre">
+<p>Cieux - Judie (Doctorant)</p>
+<p>judie.cieux@laas.fr</p>
+</div></div>
+<div class="col-xs-6 col-sm-4 col-md-3"><div class="membre">
+<p>Zona - Larry (Doctorant)</p>
+<p>larry.zona@laas.fr</p>
+</div></div>
+<div class="col-xs-6 col-sm-4 col-md-3"><div class="membre">
+<p>Chocolat - Léo (Doctorant)</p>
+<p>lait.au.chocolat@laas.fr</p>
+</div></div>
+<div class="col-xs-6 col-sm-4 col-md-3"><div class="membre">
+<p>Ratif - Luc (Doctorant)</p>
+<p>luc.ratif@laas.fr</p>
+</div></div>
+</div>
+
+				</div>
+					
+		<!--			
+				<div role="tabpanel" class="tab-pane" id="vue">
+				
+					<h3>Vue globale</h3>
+					
+					<div id="stats" width="100%"></div>
+					
+					<div id="stats2" width="100%"></div>
+					
+					
+					<script type="text/javascript">
+					 anychart.onDocumentLoad(function (jQuery) {
+						// create an instance of a pie chart
+						var chart = anychart.bar();
+						// set the data
+						chart.data([
+						  ["Chocolate", 5],
+						  ["Rhubarb compote", 2],
+						  ["Crêpe Suzette", 2],
+						  ["American blueberry", 2],
+						  ["Buttermilk", 1]
+						]);
+						// set chart title
+						chart.title("Top 5 pancake fillings");
+						// set the container element 
+						chart.container("stats");
+						// initiate chart display
+						chart.draw();
+						
+						// create an instance of a pie chart
+						var chart2 = anychart.pie();
+						// set the data
+						chart2.data([
+						  ["Chocolate", 5],
+						  ["Rhubarb compote", 2],
+						  ["Crêpe Suzette", 2],
+						  ["American blueberry", 2],
+						  ["Buttermilk", 1]
+						]);
+						// set chart title
+						chart2.title("Top 5 pancake fillings");
+						// set the container element 
+						chart2.container("stats2");
+						// initiate chart display
+						chart2.draw();
+						
+
+
+					});
+					
+					
+					</script>
+				
+				</div>
+				
+				-->
+				
+			</div> <!--/content -->
+			
+
+		</div> <!-- /container -->
+	
+		<footer class="footer">
+			
+			<div class="container-fluid" style="border-top: 1px solid black;">
+			
+				<div class="row">
+					
+					<div class="col-md-4">
+						<p class="text-muted">
+							<a href="http://www.insa-toulouse.fr/fr/index.html" title="http://www.insa-toulouse.fr">
+							INSA Toulouse</a> - 4<sup>ème</sup> année - Projet MDSI
+						</p>
+						<div class="wrapper-img">
+							<a href="http://www.insa-toulouse.fr/fr/index.html" title="http://www.insa-toulouse.fr">
+								<img src="logo-insa-toulouse.png" alt="Logo de l'INSA de Toulouse" />
+							</a>
+						</div>
+					</div>
+					
+					<div class="col-md-4 center">
+						<p class="text-muted"><a href="mailto:cantie@etud.insa-toulouse.fr">CANTI&Eacute; Thomas</a></p>
+						<p class="text-muted"><a href="mailto:derivas@etud.insa-toulouse.fr">DE RIVAS Jean</a></p>
+						<p class="text-muted"><a href="mailto:piszyna@etud.insa-toulouse.fr">PISZYNA Andy</a></p>
+						<p class="text-muted"><a href="mailto:rabary@etud.insa-toulouse.fr">RABARY Anaïs</a></p>
+					</div>
+					
+					<div class="col-md-4 wrapp">
+						<p class="text-muted">
+							<a href="https://www.laas.fr/public/" title="https://www.laas.fr/">
+							LAAS</a> - Laboratoire d'Analyse et d'Architectures des Systèmes
+						</p>
+						<div class="wrapper-img">
+							<a href="https://www.laas.fr/public/" title="https://www.laas.fr/">
+								<img src="logo-laas-cnrs.png" alt="Logo du LAAS-CNRS" />
+							</a>
+						</div>
+					</div>
+			
+				</div>
+				
+				
+			
+			</div>
+			
+		</footer>
+	
+	</body>
+
+</html>

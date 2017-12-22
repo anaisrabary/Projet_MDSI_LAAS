@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<membres>
+		
+	<membre id="M1">
+		<nom>Bill</nom>
+		<prenom>Tcherno</prenom>
+		<grade>PR</grade>
+		<email>tcherno.bill@laas.fr</email>
+	</membre>
+
+	
+	<membre id="M2">
+		<nom>Balmaské</nom>
+		<prenom>Alonzo</prenom>
+		<grade>Doctorant</grade>
+		<email>alonzo.balmaske@laas.fr</email>
+	</membre>
+
+	
+	<membre id="M3">
+	  <nom>Bistrot</nom>
+	  <prenom>Alonzo</prenom>
+	  <grade>MCF</grade>
+	  <email>alonzo.bistrot@laas.fr</email>
+	</membre>
+
+
+	
+	<membre id="M4">
+	  <nom>Crush</nom>
+	  <prenom>Candy</prenom>
+	  <grade>Doctorant</grade>
+	  <email>candy.crush@laas.fr</email>
+	</membre>
+
+	
+	<membre id="M5">
+	  <nom>Minie</nom>
+	  <prenom>Cathy</prenom>
+	  <grade>PR</grade>
+	  <email>cathy.minie@laas.fr</email>
+	</membre>
+
+	<membre id="M6">
+	  <nom>Pran</nom>
+	  <prenom>Dolly</prenom>
+	  <grade>MCF</grade>
+	  <email>pran@laas.fr</email>
+	</membre>
+
+	<membre id="M7">
+	  <nom>Ileosud</nom>
+	  <prenom>Eleonore</prenom>
+	  <grade>Doctorant</grade>
+	  <email>nordsud@laas.fr</email>
+	</membre>
+
+	<membre id="M8">
+	  <nom>Lapeche</nom>
+	  <prenom>Ella</prenom>
+	  <grade>PR</grade>
+	  <email>lapeche@laas.fr</email>
+	</membre>
+
+	<membre id="M9">
+	  <nom>Dorsa</nom>
+	  <prenom>Elsa</prenom>
+	  <grade>MCF</grade>
+	  <email>elsa.dorsa@laas.fr</email>
+	</membre>
+
+
+	<membre id="M10">
+	  <nom>Deplaisant</nom>
+	  <prenom>Fort</prenom>
+	  <grade>PR</grade>
+	  <email>fort.deplaisant@laas.fr</email>
+	</membre>
+
+	<membre id="M11">
+	  <nom>Opost</nom>
+	  <prenom>Fidel</prenom>
+	  <grade>Doctorant</grade>
+	  <email>fidelopost@laas.fr</email>
+	</membre>
+
+	
+	<membre id="M12">
+	  <nom>Mendufric</nom>
+	  <prenom>Gerard</prenom>
+	  <grade>PR</grade>
+	  <email>gerarmendufric@laas.fr</email>
+	</membre>
+
+	<membre id="M13">
+	  <nom>Evenu</nom>
+	  <prenom>Hilaire</prenom>
+	  <grade>MCF</grade>
+	  <email>hilairevenu@laas.fr</email>
+	</membre>
+	
+	<membre id="M14">
+	  <nom>Péré</nom>
+	  <prenom>Ines</prenom>
+	  <grade>MCF</grade>
+	  <email>ines.pere@laas.fr</email>
+	</membre>
+
+	<membre id="M15">
+	  <nom>Nieur</nom>
+	  <prenom>Inge</prenom>
+	  <grade>MCF</grade>
+	  <email>ingenieur@laas.fr</email>
+	</membre>
+
+	<membre id="M16">
+	  <nom>Le Paquet</nom>
+	  <prenom>Jamie</prenom>
+	  <grade>PR</grade>
+	  <email>jamielepaquet@laas.fr</email>
+	</membre>
+
+	
+	<membre id="M17">
+	  <nom>Couzy</nom>
+	  <prenom>Jacques</prenom>
+	  <grade>Doctorant</grade>
+	  <email>jacques.couzy@laas.fr</email>
+	</membre>
+
+	
+
+	<membre id="M18">
+	  <nom>Orlapizza</nom>
+	  <prenom>Jade</prenom>
+	  <grade>MCF</grade>
+	  <email>jade.orlapizza@laas.fr</email>
+	</membre>
+	
+	<membre id="M19">
+	  <nom>Dmépassa</nom>
+	  <prenom>Jeanne</prenom>
+	  <grade>MCF</grade>
+	  <email>jeanne.dmepassa@laas.fr</email>
+	</membre>
+
+	
+	
+	
+	<membre id="M20">
+	  <nom>Keunitet</nom>
+	  <prenom>Jenny</prenom>
+	  <grade>MCF</grade>
+	  <email>jenny.keunitet@laas.fr</email>
+	</membre>
+
+
+	
+	
+	<membre id="M21">
+	  <nom>Deuf</nom>
+	  <prenom>John</prenom>
+	  <grade>Doctorant</grade>
+	  <email>john.deuf@laas.fr</email>
+	</membre>
+
+	
+	
+	<membre id="M22">
+	  <nom>Cieux</nom>
+	  <prenom>Judie</prenom>
+	  <grade>Doctorant</grade>
+	  <email>judie.cieux@laas.fr</email>
+	</membre>
+
+	<membre id="M23">
+	  <nom>Uncou</nom>
+	  <prenom>Juste</prenom>
+	  <grade>MCF</grade>
+	  <email>juste.uncou@laas.fr</email>
+	</membre>
+
+
+	
+	<membre id="M24">
+	  <nom>Goldage</nom>
+	  <prenom>Larry</prenom>
+	  <grade>PR</grade>
+	  <email>larry.golade@laas.fr</email>
+	</membre>
+
+	
+	<membre id="M25">
+	  <nom>Zona</nom>
+	  <prenom>Larry</prenom>
+	  <grade>Doctorant</grade>
+	  <email>larry.zona@laas.fr</email>
+	</membre>
+
+	<membre id="M26">
+	  <nom>Chocolat</nom>
+	  <prenom>Léo</prenom>
+	  <grade>Doctorant</grade>
+	  <email>lait.au.chocolat@laas.fr</email>
+	</membre>
+
+	
+	<membre id="M27">
+	  <nom>Ange</nom>
+	  <prenom>Lou</prenom>
+	  <grade>MCF</grade>
+	  <email>lou.ange@laas.fr</email>
+	</membre>
+
+	<membre id="M28">
+	  <nom>Ratif</nom>
+	  <prenom>Luc</prenom>
+	  <grade>Doctorant</grade>
+	  <email>luc.ratif@laas.fr</email>
+	</membre>
+
+	<membre id="M29">
+	  <nom>Hole</nom>
+	  <prenom>Lucie</prenom>
+	  <grade>MCF</grade>
+	  <email>lucie.hole@laas.fr</email>
+	</membre>
+
+	<membre id="M30">
+	  <nom>Commandement</nom>
+	  <prenom>Lydie</prenom>
+	  <grade>PR</grade>
+	  <email>les10commandements@laas.fr</email>
+	</membre>
+	
+	
+</membres>
