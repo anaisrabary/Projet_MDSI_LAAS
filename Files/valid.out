@@ -1,5 +1,5 @@
 
-vendredi 22 décembre 2017, 14:59:23 (UTC+0100)
+vendredi 22 décembre 2017, 15:31:44 (UTC+0100)
 
 xmllint --noout --schema XSD/auteurs_externes.xsd auteurs_externes.xml
 auteurs_externes.xml validates
