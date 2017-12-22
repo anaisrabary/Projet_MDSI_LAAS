@@ -1,0 +1,32 @@
+
+vendredi 22 décembre 2017, 14:59:23 (UTC+0100)
+
+xmllint --noout --schema XSD/auteurs_externes.xsd auteurs_externes.xml
+auteurs_externes.xml validates
+
+xmllint --noout --schema XSD/bdd.xsd bdd.xml
+bdd.xml validates
+
+xmllint --noout --schema XSD/equipes_de_recherche.xsd equipes_de_recherche.xml
+equipes_de_recherche.xml validates
+
+xmllint --noout --schema XSD/evenements.xsd evenements.xml
+evenements.xml validates
+
+xmllint --noout --schema XSD/membres.xsd membres.xml
+membres.xml validates
+
+xmllint --noout --schema XSD/partenaires_participants.xsd partenaires_participants.xml
+partenaires_participants.xml validates
+
+xmllint --noout --schema XSD/productions_scientifiques.xsd productions_scientifiques.xml
+productions_scientifiques.xml validates
+
+xmllint --noout --schema XSD/projets_de_recherche.xsd projets_de_recherche.xml
+projets_de_recherche.xml validates
+
+xmllint --noout --schema XSD/themes.xsd themes.xml
+themes.xml validates
+
+xmllint --noout --schema XSD/theses_doctorats.xsd theses_doctorats.xml
+theses_doctorats.xml validates

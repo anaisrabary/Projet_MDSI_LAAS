@@ -2,7 +2,9 @@
 
 <productions_scientifiques>
 
- <production id="RAP1" type="RAP">
+  <rapports>
+
+ <rapport id="RAP1">
     <titre>Rapport de stage de 3ème</titre>
     <contenu>bla bla bla</contenu>
     <annee>2015</annee>
@@ -11,11 +13,14 @@
       <auteur>A3</auteur>
       <auteur>A1</auteur>
     </auteurs>
-  </production>
+  </rapport>
+  
+ </rapports>
   
 
-  
-  <production id="ART3" type="ART">
+ <articles>
+ 
+  <article id="ART3">
     <titre>Mon super article sur Toulouse</titre>
     <contenu>bla bla bla</contenu>
     <annee>2013</annee>
@@ -25,11 +30,14 @@
       <auteur>A4</auteur>
     </auteurs>
     <conference nom="La ville rose" classe="A" />
-  </production>
+  </article>
+ 
+</articles>
   
+ 
+ <revues>
   
-  
-  <production id="REV6" type="REV">
+  <revue id="REV6">
     <titre>Finance d'entreprise</titre>
     <contenu>bla bla bla</contenu>
     <annee>2017</annee>
@@ -38,8 +46,8 @@
       <auteur>A11</auteur>
     </auteurs>
     <journal nom="La congolexicomatisation des lois du marché" classe="C" />
-  </production>
-
-
-
+  </revue>
+  
+ </revues>
+ 
 </productions_scientifiques>

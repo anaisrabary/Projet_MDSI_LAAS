@@ -133,6 +133,12 @@
 			<xsd:field xpath="porteur_du_projet" />
 		</xsd:keyref>
 		
+		<!-- référence au rapport d'un projet -->
+		<xsd:keyref name="ref_ID_Rapport_Projet" refer="ID_Rapport">
+			<xsd:selector xpath="./projets_de_recherche/projet_de_recherche" />
+			<xsd:field xpath="rapport_recherche" />
+		</xsd:keyref>
+		
 		
 	</xsd:element>	
 
